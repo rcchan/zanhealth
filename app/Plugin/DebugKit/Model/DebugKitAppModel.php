@@ -1,6 +1,8 @@
 <?php
 /**
- * PHP versions 4 and 5
+ * Debug Kit App Model
+ *
+ * PHP versions 5
  *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
  * Copyright 2005-2010, Cake Software Foundation, Inc. (http://cakefoundation.org)
@@ -9,10 +11,15 @@
  * Redistributions of files must retain the above copyright notice.
  *
  * @copyright     Copyright 2005-2010, Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       cake
- * @subpackage    cake.app
- * @since         CakePHP(tm) v 0.10.0.1076
+ * @link          http://cakephp.org
+ * @package       debug_kit
+ * @subpackage    debug_kit
+ * @since         DebugKit 0.1
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
- */
-require 'webroot' . DIRECTORY_SEPARATOR . 'index.php';
+ **/
+
+App::uses('AppModel', 'Model');
+
+class DebugKitAppModel extends AppModel {
+
+}
