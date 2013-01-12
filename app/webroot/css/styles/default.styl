@@ -1,0 +1,27 @@
+@import bootstrap
+@import bootstrap-responsive
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+// bootstrap overrides
+.navbar li.dropdown
+  &:hover .dropdown-menu
+      display block
+  .dropdown-menu
+    top 95% 
+
+.navbar .nav > li > a:focus, .navbar .nav > li > a:hover
+  text-decoration underline
+  
+.navbar .nav
+  width 100%
+  
+.navbar .nav > li.pull-right
+  float right
+  
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input
+  height 30px
+
+#container
+  float none
+  margin auto

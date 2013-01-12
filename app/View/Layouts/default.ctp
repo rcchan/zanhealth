@@ -28,6 +28,12 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
+    ?>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?
+      echo $this->Html->css('default.css');
+      echo $this->Html->script('//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js');
+      echo $this->Html->script('bootstrap.min');
 
 		echo $this->Html->css('cake.generic');
 
