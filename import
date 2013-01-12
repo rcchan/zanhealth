@@ -45,7 +45,7 @@ $db->query(
     `serial_number` varchar(45) DEFAULT NULL,
     `year_manufactured` year(4) DEFAULT NULL,
     `funding` int(11) DEFAULT NULL,
-    `vendor` int(11) DEFAULT NULL,
+    `vendor_id` int(11) DEFAULT NULL,
     `date_received` date DEFAULT NULL,
     `warranty_expiry` date DEFAULT NULL,
     `contract_expiry` date DEFAULT NULL,
@@ -60,15 +60,15 @@ $db->query(
     `remarks` mediumtext,
     `type` enum(\'Biomedical\') DEFAULT NULL,
     `quantity` int(11) DEFAULT NULL,
-    `category` int(11) DEFAULT NULL,
+    `category_id` int(11) DEFAULT NULL,
     `item_spec` varchar(45) DEFAULT NULL,
     `price` int(11) DEFAULT NULL,
     PRIMARY KEY (`id`),
     KEY `facility` (`facility_id`),
-    KEY `vendor` (`vendor`),
-    KEY `category` (`category`),
-    CONSTRAINT `vendor` FOREIGN KEY (`vendor`) REFERENCES `vendor` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-    CONSTRAINT `category` FOREIGN KEY (`category`) REFERENCES `category` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+    KEY `vendor` (`vendor_id`),
+    KEY `category` (`category_id`),
+    CONSTRAINT `vendor` FOREIGN KEY (`vendor_id`) REFERENCES `vendor` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+    CONSTRAINT `category` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
     CONSTRAINT `facility` FOREIGN KEY (`facility_id`) REFERENCES `facility` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8'
 );
@@ -81,7 +81,7 @@ $stmt = $db->prepare("INSERT INTO items
   serial_number,
   year_manufactured,
   funding,
-  vendor,
+  vendor_id,
   date_received,
   warranty_expiry,
   contract_expiry,
@@ -96,7 +96,7 @@ $stmt = $db->prepare("INSERT INTO items
   remarks,
   type,
   quantity,
-  category,
+  category_id,
   item_spec,
   price)
   VALUES
