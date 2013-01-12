@@ -1,0 +1,182 @@
+#!/usr/bin/php
+<?php
+
+if ($argc != 2) die('Usage: ' . $argv[0] . " tab-separated-data-file\n");
+$file = fopen($argv[1], "r") or die ('could not open file');
+
+$db = new PDO("mysql:host=localhost;dbname=zanhealth;","hceu","");
+$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+$db->query('DROP TABLE IF EXISTS items');
+
+$db->query('DROP TABLE IF EXISTS category');
+$db->query(
+  'CREATE TABLE `category` (
+    `id` int(11) NOT NULL,
+    `name` varchar(45) NOT NULL,
+    PRIMARY KEY (`id`)
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8'
+);
+
+$db->query('DROP TABLE IF EXISTS facility');
+$db->query(
+  'CREATE TABLE `facility` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    `name` varchar(45) NOT NULL,
+    PRIMARY KEY (`id`)
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8'
+);
+
+$db->query('DROP TABLE IF EXISTS vendor');
+$db->query(
+  'CREATE TABLE `vendor` (
+    `id` int(11) NOT NULL,
+    `name` varchar(45) NOT NULL,
+    PRIMARY KEY (`id`)
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8'
+);
+
+$db->query(
+  'CREATE TABLE `items` (
+    `id` int(3) unsigned zerofill NOT NULL AUTO_INCREMENT,
+    `name` varchar(255) NOT NULL,
+    `manufacturer` varchar(45) DEFAULT NULL,
+    `model` varchar(45) DEFAULT NULL,
+    `serial_number` varchar(45) DEFAULT NULL,
+    `year_manufactured` year(4) DEFAULT NULL,
+    `funding` int(11) DEFAULT NULL,
+    `vendor` int(11) DEFAULT NULL,
+    `date_received` date DEFAULT NULL,
+    `warranty_expiry` date DEFAULT NULL,
+    `contract_expiry` date DEFAULT NULL,
+    `warranty_notes` mediumtext,
+    `service_agent` varchar(45) DEFAULT NULL,
+    `facility_id` int(11) DEFAULT NULL,
+    `floor` int(11) DEFAULT NULL,
+    `room` varchar(45) DEFAULT NULL,
+    `building` varchar(45) DEFAULT NULL,
+    `status` enum(\'Fully Functional\',\'Not Functional\',\'Needs Major Repair\',\'Needs Minor Repair\') DEFAULT NULL,
+    `utilization` enum(\'Normal\',\'No Utilization\',\'Very High\',\'Very Low\') DEFAULT NULL,
+    `remarks` mediumtext,
+    `type` enum(\'Biomedical\') DEFAULT NULL,
+    `quantity` int(11) DEFAULT NULL,
+    `category` int(11) DEFAULT NULL,
+    `item_spec` varchar(45) DEFAULT NULL,
+    `price` int(11) DEFAULT NULL,
+    PRIMARY KEY (`id`),
+    KEY `facility` (`facility_id`),
+    KEY `vendor` (`vendor`),
+    KEY `category` (`category`),
+    CONSTRAINT `vendor` FOREIGN KEY (`vendor`) REFERENCES `vendor` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+    CONSTRAINT `category` FOREIGN KEY (`category`) REFERENCES `category` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+    CONSTRAINT `facility` FOREIGN KEY (`facility_id`) REFERENCES `facility` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8'
+);
+
+$stmt = $db->prepare("INSERT INTO items
+  (id,
+  name,
+  manufacturer,
+  model,
+  serial_number,
+  year_manufactured,
+  funding,
+  vendor,
+  date_received,
+  warranty_expiry,
+  contract_expiry,
+  warranty_notes,
+  service_agent,
+  facility_id,
+  floor,
+  room,
+  building,
+  status,
+  utilization,
+  remarks,
+  type,
+  quantity,
+  category,
+  item_spec,
+  price)
+  VALUES
+  (
+    :id,
+    :name,
+    :manufacturer,
+    :model,
+    :serial,
+    :year,
+    :funding,
+    :vendor,
+    :received,
+    :warranty,
+    :contract,
+    :warrantynotes,
+    :agent,
+    :facility,
+    :floor,
+    :room,
+    :building,
+    :status,
+    :utilization,
+    :remarks,
+    :type,
+    :qty,
+    :category,
+    :spec,
+    :price
+  );
+");
+
+$facilities = array(); $category = array(); $vendor = array(); $data = array();
+while (!feof($file)){
+  $line = fgets($file) ;
+  $line = explode("\t", $line);
+  $i = 0;
+  //if (count($line) != 25 && !(count($line) == 26 && !$line[26])) print_r($line);
+  $data[] = array(
+    ':id' => $line[$i++] ?: NULL,
+    ':name' => $line[$i++] ?: NULL,
+    ':manufacturer' => $line[$i++] ?: NULL,
+    ':model' => $line[$i++] ?: NULL,
+    ':serial' => $line[$i++] ?: NULL,
+    ':year' => $line[$i++] ?: NULL,
+    ':funding' => $line[$i++] ?: NULL,
+    ':vendor' => $line[$i++] ? isset($vendor[$line[$i-1]]) ? $vendor[$line[$i-1]] : $vendor[$line[$i-1]] = count($vendor) + 1 : NULL,
+    ':received' => $line[$i++] ?: NULL,
+    ':warranty' => $line[$i++] ?: NULL,
+    ':contract' => $line[$i++] ?: NULL,
+    ':warrantynotes' => $line[$i++] ?: NULL,
+    ':agent' => $line[$i++] ?: NULL,
+    ':facility' => $line[$i++] ? isset($facilities[$line[$i-1]]) ? $facilities[$line[$i-1]] : $facilities[$line[$i-1]] = count($facilities) + 1: NULL,
+    ':floor' => $line[$i++] ?: NULL,
+    ':room' => $line[$i++] ?: NULL,
+    ':building' => $line[$i++] ?: NULL,
+    ':status' => $line[$i++] ?: NULL,
+    ':utilization' => $line[$i++] ?: NULL,
+    ':remarks' => $line[$i++] ?: NULL,
+    ':type' => $line[$i++] ?: NULL,
+    ':qty' => $line[$i++] ?: NULL,
+    ':category' => $line[$i++] ? isset($category[$line[$i-1]]) ? $category[$line[$i-1]] : $category[$line[$i-1]] = count($category) + 1: NULL,
+    ':spec' => $line[$i++] ?: NULL,
+    ':price' => $line[$i++] ?: NULL
+  );
+}
+
+$db->beginTransaction();
+$stmt_async = $db->prepare('INSERT INTO vendor (id, name) VALUES (?, ?)');
+foreach ($vendor as $k => $v) $stmt_async->execute(array($v, $k));
+
+$stmt_async = $db->prepare('INSERT INTO facility (id, name) VALUES (?, ?)');
+foreach ($facilities as $k => $v) $stmt_async->execute(array($v, $k));
+
+$stmt_async = $db->prepare('INSERT INTO category (id, name) VALUES (?, ?)');
+foreach ($category as $k => $v) $stmt_async->execute(array($v, $k));
+
+foreach ($data as $d) $stmt->execute($d);
+
+$db->commit();
+fclose($file) ;
+
+?>
