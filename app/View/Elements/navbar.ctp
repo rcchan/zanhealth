@@ -18,7 +18,7 @@
           <li><a href="#">Manage Work Trade</a></li>
         </ul>
       </li>
-      <li><a href="#">Manage Item</a></li>
+      <li><a href="/items">Manage Item</a></li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
           Maintenance
