@@ -9,9 +9,9 @@ $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 $db->query('DROP TABLE IF EXISTS items');
 
-$db->query('DROP TABLE IF EXISTS category');
+$db->query('DROP TABLE IF EXISTS categories');
 $db->query(
-  'CREATE TABLE `category` (
+  'CREATE TABLE `categories` (
     `id` int(11) NOT NULL,
     `name` varchar(45) NOT NULL,
     PRIMARY KEY (`id`)
@@ -27,9 +27,9 @@ $db->query(
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8'
 );
 
-$db->query('DROP TABLE IF EXISTS vendor');
+$db->query('DROP TABLE IF EXISTS vendors');
 $db->query(
-  'CREATE TABLE `vendor` (
+  'CREATE TABLE `vendors` (
     `id` int(11) NOT NULL,
     `name` varchar(45) NOT NULL,
     PRIMARY KEY (`id`)
@@ -67,8 +67,8 @@ $db->query(
     KEY `facility` (`facility_id`),
     KEY `vendor` (`vendor_id`),
     KEY `category` (`category_id`),
-    CONSTRAINT `vendor` FOREIGN KEY (`vendor_id`) REFERENCES `vendor` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-    CONSTRAINT `category` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+    CONSTRAINT `vendor` FOREIGN KEY (`vendor_id`) REFERENCES `vendors` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+    CONSTRAINT `category` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
     CONSTRAINT `facility` FOREIGN KEY (`facility_id`) REFERENCES `facility` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8'
 );
@@ -165,13 +165,13 @@ while (!feof($file)){
 }
 
 $db->beginTransaction();
-$stmt_async = $db->prepare('INSERT INTO vendor (id, name) VALUES (?, ?)');
+$stmt_async = $db->prepare('INSERT INTO vendors (id, name) VALUES (?, ?)');
 foreach ($vendor as $k => $v) $stmt_async->execute(array($v, $k));
 
 $stmt_async = $db->prepare('INSERT INTO facility (id, name) VALUES (?, ?)');
 foreach ($facilities as $k => $v) $stmt_async->execute(array($v, $k));
 
-$stmt_async = $db->prepare('INSERT INTO category (id, name) VALUES (?, ?)');
+$stmt_async = $db->prepare('INSERT INTO categories (id, name) VALUES (?, ?)');
 foreach ($category as $k => $v) $stmt_async->execute(array($v, $k));
 
 foreach ($data as $d) $stmt->execute($d);
