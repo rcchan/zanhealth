@@ -44,6 +44,10 @@ class PagesController extends AppController {
  * @var array
  */
 	public $uses = array();
+  
+  public function home(){
+    $this->Stats->getStats();
+  }
 
 /**
  * Displays a view

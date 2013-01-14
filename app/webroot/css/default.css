@@ -7846,6 +7846,17 @@ table.dataTable thead td:active {
   *margin-top: -1px;
   -webkit-overflow-scrolling: touch;
 }
+.stats {
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+.stats > div {
+  display: inline-block;
+  width: 50%;
+  height: 400px;
+}
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
