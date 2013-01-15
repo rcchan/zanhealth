@@ -20,6 +20,9 @@ class ItemsController extends AppController {
   
   public function index(){
     $this->set('data', $this->Item->find('all'));
+    $this->set('categories', $this->Item->Category->find('list'));
+    $this->set('facilities', $this->Item->Facility->find('list'));
+    $this->set('vendors', $this->Item->Vendor->find('list'));
   }
 }
 ?>

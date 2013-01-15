@@ -9,10 +9,13 @@
       //"sScrollY": "400px"
     });
     dt.wrap('<div style="width:100%; height: 500px; overflow: auto; white-space: nowrap;">').parent().doubleScroll().css('overflow-y', 'auto');
-
+    
     $('thead.data_filters input').keyup( function () {
-      dt.fnFilter( this.value, $('thead.data_filters input').index(this) );
+      dt.fnFilter( this.value, $('thead.data_filters input, thead.data_filters select').index(this) );
     } );
+    $('thead.data_filters select').change( function () {
+      dt.fnFilter( this.value, $('thead.data_filters input, thead.data_filters select').index(this) );
+    } );    
   });
 </script>
   <table id="items">
@@ -43,10 +46,24 @@
         <td><input type="text" placeholder="Filter by No."></td>
         <td><input type="text" placeholder="Filter by Asset No."></td>
         <td><input type="text" placeholder="Filter by Asset Name"></td>
-        <td><input type="text" placeholder="Filter by Category"></td>
+        <td>
+          <select>
+            <option value="">Filter by Category</option>
+            <? foreach ($categories as $c){ ?>
+              <option value="<?= $c ?>"><?= $c ?></option>
+            <? } ?>
+          </select>
+        </td>
         <td><input type="text" placeholder="Filter by Utilization"></td>
         <td><input type="text" placeholder="Filter by Status"></td>
-        <td><input type="text" placeholder="Filter by Health Facility"></td>
+        <td>
+          <select>
+            <option value="">Filter by Health Facility</option>
+            <? foreach ($facilities as $c){ ?>
+              <option value="<?= $c ?>"><?= $c ?></option>
+            <? } ?>
+          </select>
+        </td>
         <td><input type="text" placeholder="Filter by Room Name"></td>
         <td><input type="text" placeholder="Filter by Manufacturer"></td>
         <td><input type="text" placeholder="Filter by Model No."></td>
@@ -54,7 +71,14 @@
         <td><input type="text" placeholder="Filter by Year"></td>
         <td><input type="text" placeholder="Filter by Received Date"></td>
         <td><input type="text" placeholder="Filter by Purchase Price"></td>
-        <td><input type="text" placeholder="Filter by Vendor"></td>
+        <td>
+          <select>
+            <option value="">Filter by Vendor</option>
+            <? foreach ($categories as $c){ ?>
+              <option value="<?= $c ?>"><?= $c ?></option>
+            <? } ?>
+          </select>
+        </td>
         <td><input type="text" placeholder="Filter by Funding"></td>
         <td><input type="text" placeholder="Filter by Warranty"></td>
         <td><input type="text" placeholder="Filter by Contract"></td>
