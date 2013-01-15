@@ -7,7 +7,7 @@
       "bPaginate": false,
       //"sScrollX": "100%",
       //"sScrollY": "400px"
-    }).wrap('<div style="width:100%; height: 500px; overflow: auto; white-space: nowrap;">').parent().doubleScroll();
+    }).wrap('<div style="width:100%; height: 500px; overflow: auto; white-space: nowrap;">').parent().doubleScroll().css('overflow-y', 'auto');
   });
 </script>
   <table id="items">
