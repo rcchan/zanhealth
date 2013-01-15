@@ -1,18 +1,11 @@
 <?php
 App::uses('AppModel', 'Model');
 /**
- * Facility Model
+ * Vendor Model
  *
  * @property Item $Item
  */
-class Facility extends AppModel {
-
-/**
- * Use table
- *
- * @var mixed False or table name
- */
-	public $useTable = 'facility';
+class Vendor extends AppModel {
 
 /**
  * Display field
@@ -32,7 +25,7 @@ class Facility extends AppModel {
 	public $hasMany = array(
 		'Item' => array(
 			'className' => 'Item',
-			'foreignKey' => 'facility_id',
+			'foreignKey' => 'vendor_id',
 			'dependent' => false,
 			'conditions' => '',
 			'fields' => '',
