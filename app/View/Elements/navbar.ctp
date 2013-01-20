@@ -49,7 +49,7 @@
         </a>
         <ul class="dropdown-menu">
           <li><a href="#">Change Password</a></li>
-          <li><a href="#">Log out</a></li>
+          <li><a href="/users/logout">Log out</a></li>
         </ul>
       </li>
     </ul>

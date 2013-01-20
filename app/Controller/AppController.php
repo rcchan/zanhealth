@@ -32,5 +32,13 @@ App::uses('Controller', 'Controller');
  * @link http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
-	public $components = array('DebugKit.Toolbar', 'Stats');
+	public $components = array('DebugKit.Toolbar', 'Stats', 'Auth' => array(
+            'authenticate' => 'BCrypt',
+            'loginRedirect' => array('controller' => 'pages', 'action' => 'home', 'home'),
+            'logoutRedirect' => array('controller' => 'users', 'action' => 'login')
+        ), 'Session');
+
+  function beforeFilter(){
+    $this->Auth->deny(); // deny everything except login
+  }
 }
