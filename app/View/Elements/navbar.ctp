@@ -42,16 +42,18 @@
           <li><a href="#">View Orders</a></li>
         </ul>
       </li>
-      <li class="dropdown pull-right">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-          Account Info
-          <b class="caret"></b>
-        </a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Change Password</a></li>
-          <li><a href="/users/logout">Log out</a></li>
-        </ul>
-      </li>
+      <? if ($user){ ?>
+        <li class="dropdown pull-right">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            Account Info
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Change Password</a></li>
+            <li><a href="/users/logout">Log out</a></li>
+          </ul>
+        </li>
+      <? } ?>
     </ul>
   </div>
 </div>

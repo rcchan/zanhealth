@@ -40,5 +40,6 @@ class AppController extends Controller {
 
   function beforeFilter(){
     $this->Auth->deny(); // deny everything except login
+    $this->set('user', $this->Auth->user());
   }
 }
