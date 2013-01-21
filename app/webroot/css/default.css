@@ -7904,3 +7904,6 @@ input[type="color"],
   float: none;
   margin: auto;
 }
+text[text-anchor=end] {
+  display: none;
+}
