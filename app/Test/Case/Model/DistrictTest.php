@@ -1,11 +1,11 @@
 <?php
-App::uses('Facility', 'Model');
+App::uses('District', 'Model');
 
 /**
- * Facility Test Case
+ * District Test Case
  *
  */
-class FacilityTest extends CakeTestCase {
+class DistrictTest extends CakeTestCase {
 
 /**
  * Fixtures
@@ -13,6 +13,8 @@ class FacilityTest extends CakeTestCase {
  * @var array
  */
 	public $fixtures = array(
+		'app.district',
+		'app.zone',
 		'app.facility',
 		'app.item',
 		'app.vendor',
@@ -26,7 +28,7 @@ class FacilityTest extends CakeTestCase {
  */
 	public function setUp() {
 		parent::setUp();
-		$this->Facility = ClassRegistry::init('Facility');
+		$this->District = ClassRegistry::init('District');
 	}
 
 /**
@@ -35,7 +37,7 @@ class FacilityTest extends CakeTestCase {
  * @return void
  */
 	public function tearDown() {
-		unset($this->Facility);
+		unset($this->District);
 
 		parent::tearDown();
 	}

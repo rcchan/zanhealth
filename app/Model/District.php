@@ -1,19 +1,12 @@
 <?php
 App::uses('AppModel', 'Model');
 /**
- * Facility Model
+ * District Model
  *
- * @property District $District
- * @property Item $Item
+ * @property Zone $Zone
+ * @property Facility $Facility
  */
-class Facility extends AppModel {
-
-/**
- * Use table
- *
- * @var mixed False or table name
- */
-	public $useTable = 'facility';
+class District extends AppModel {
 
 /**
  * Display field
@@ -31,9 +24,9 @@ class Facility extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'District' => array(
-			'className' => 'District',
-			'foreignKey' => 'district_id',
+		'Zone' => array(
+			'className' => 'Zone',
+			'foreignKey' => 'zone_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
@@ -46,9 +39,9 @@ class Facility extends AppModel {
  * @var array
  */
 	public $hasMany = array(
-		'Item' => array(
-			'className' => 'Item',
-			'foreignKey' => 'facility_id',
+		'Facility' => array(
+			'className' => 'Facility',
+			'foreignKey' => 'district_id',
 			'dependent' => false,
 			'conditions' => '',
 			'fields' => '',
