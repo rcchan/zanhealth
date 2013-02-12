@@ -8,14 +8,12 @@
           <b class="caret"></b>
         </a>
         <ul class="dropdown-menu">
-          <li><a href="#">Manage Zone</a></li>
-          <li><a href="#">Manage District</a></li>
-          <li><a href="#">Manage Health Facility</a></li>
-          <li><a href="#">Manage Users</a></li>
-          <li><a href="#">Manage Vendor</a></li>
-          <li><a href="#">Manage Category</a></li>
-          <li><a href="#">Manage Work Priority</a></li>
-          <li><a href="#">Manage Work Trade</a></li>
+          <?
+            global $configurable;
+            foreach($configurable as $c){
+          ?>
+            <li><?= $this->Html->link('Manage ' . Inflector::pluralize($c), '/config/' . $c) ?></li>
+          <? } ?>
         </ul>
       </li>
       <li><a href="/items">Manage Item</a></li>
