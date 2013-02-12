@@ -23,9 +23,9 @@
           <b class="caret"></b>
         </a>
         <ul class="dropdown-menu">
-          <li><a href="#">Work Request</a></li>
-          <li><a href="#">View Request</a></li>
-          <li><a href="#">Work Orders</a></li>
+          <li><a href="#">New Work Request</a></li>
+          <li><a href="/workRequests">View Requests</a></li>
+          <li><a href="/workRequests/closed">Closed Work Requests</a></li>
           <li><a href="#">Reports by Engineer</a></li>
           <li><a href="#">Reports by Health Facility</a></li>
         </ul>
