@@ -32,7 +32,7 @@
         <th>Manufacturer</th>
         <th>Model No.</th>
         <th>Serial No.</th>
-        <th>Year</th>
+        <th>Year Manufactured</th>
         <th>Received Date</th>
         <th>Purchase Price</th>
         <th>Vendor</th>
