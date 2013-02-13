@@ -114,7 +114,7 @@
       <? foreach ($data as $i => $d){ ?>
         <tr>
           <td><?= $i+1 ?></td>
-          <td><?= $d['Item']['domain'] ?>-<?= $d['Item']['tag'] ?>/HCEU</td>
+          <td><?= $d['Item']['identifier'] ?></td>
           <td><?= $d['Item']['name'] ?></td>
           <td><?= $d['Category']['name'] ?></td>
           <td><?= $d['Item']['utilization'] ?></td>

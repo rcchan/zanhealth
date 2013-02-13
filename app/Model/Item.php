@@ -40,7 +40,8 @@ class Item extends AppModel {
  *
  * @var string
  */
-	public $displayField = 'name';
+  public $virtualFields = array("identifier"=>"CONCAT(domain, '-' , tag, '/HCEU')");
+	public $displayField = 'identifier';
 
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
