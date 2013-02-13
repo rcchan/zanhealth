@@ -44,6 +44,7 @@
     } );    
   });
 </script>
+<div>
   <table id="items">
     <thead>
       <tr>
