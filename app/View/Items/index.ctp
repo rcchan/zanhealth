@@ -34,7 +34,7 @@
       //"sScrollX": "100%",
       //"sScrollY": "400px"
     });
-    dt.wrap('<div style="width:100%; height: 500px; overflow: auto; white-space: nowrap;">').parent().doubleScroll().css('overflow-y', 'auto');
+    dt.wrap('<div style="width:100%; max-height: 500px; overflow: auto; white-space: nowrap;">').parent().doubleScroll().css('overflow-y', 'auto');
     
     $('thead.data_filters input').keyup( function () {
       dt.fnFilter( this.value, $('thead.data_filters input, thead.data_filters select').index(this) );
