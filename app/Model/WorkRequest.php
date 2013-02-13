@@ -42,16 +42,6 @@ class WorkRequest extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'id' => array(
-			'naturalnumber' => array(
-				'rule' => array('naturalnumber'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
 		'date' => array(
 			'datetime' => array(
 				'rule' => array('datetime'),
@@ -115,16 +105,6 @@ class WorkRequest extends AppModel {
 		'cost' => array(
 			'naturalnumber' => array(
 				'rule' => array('naturalnumber'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'owner' => array(
-			'alphanumeric' => array(
-				'rule' => array('alphanumeric'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
