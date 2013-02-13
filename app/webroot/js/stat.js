@@ -60,7 +60,14 @@ zanhealth.pie = function (title, data, render) {
             type: 'pie',
             name: title,
             data: data
-        }]
+        }],
+        exporting: {
+          buttons: {
+            printButton:{
+              enabled:false
+            }
+          }
+        }
       });
     });
   });
