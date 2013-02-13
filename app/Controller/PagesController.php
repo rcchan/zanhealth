@@ -73,6 +73,7 @@ class PagesController extends AppController {
   
   public function home(){
     $this->Stats->getStats();
+    $this->set('title_for_layout', 'Dashboard');
   }
 
 /**

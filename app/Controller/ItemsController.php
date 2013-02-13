@@ -45,6 +45,7 @@ class ItemsController extends AppController {
 	public $uses = array();
   
   public function index(){
+    $this->set('title_for_layout', 'Manage Items');
     $this->set('data', $this->Item->find('all'));
     $this->set('categories', $this->Item->Category->find('list'));
     $this->set('facilities', $this->Item->Facility->find('list'));

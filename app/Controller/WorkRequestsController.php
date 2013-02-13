@@ -30,10 +30,12 @@ App::uses('AppController', 'Controller');
 
 class WorkRequestsController extends AppController {
   public function index($status = null){
+    $this->set('title_for_layout', 'View Work Requests');
     $this->set('data', $this->WorkRequest->findAllByStatus($status));
   }
   
   public function create(){
+    $this->set('title_for_layout', 'Create Work Request');
     if ($this->request->is('post')) {
       $this->WorkRequest->create();
       if ($this->WorkRequest->save($this->request->data)) {
