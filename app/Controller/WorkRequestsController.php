@@ -29,14 +29,38 @@
 App::uses('AppController', 'Controller');
 
 class WorkRequestsController extends AppController {
-  public function index($status = null){
+  public function index($prop = 'Status', $value = 'Open'){
     $this->set('title_for_layout', 'View Work Requests');
-    $this->set('data', $this->WorkRequest->findAllByStatus($status));
+    switch($prop){
+      case 'facility':
+        $this->set('data', $this->WorkRequest->find('all', array(
+          'conditions' => array( 'Item.facility_id' => $value ),
+          'contain' => 'Item.facility_id'
+        )));
+        break;
+      case 'requestor':
+        $prop .= '_id';
+        //fall through
+      default:
+        $this->set('data', $this->WorkRequest->{'findAllBy'.$prop}($value));
+    }
   }
   
-  public function create(){
+  public function requestor(){
+    $this->set('title_for_layout', 'View Work Requests');
+    if ($this->request->is('post')) $this->redirect(array('..', 'requestor', $_POST['data']['WorkRequest']['requestor']));
+    $this->set('requestors', $this->WorkRequest->Requestor->find('list'));
+  }
+  
+  public function facility(){
+    $this->set('title_for_layout', 'View Work Requests');
+    if ($this->request->is('post')) $this->redirect(array('..', 'facility', $_POST['data']['Facility']['facility']));
+    $this->set('facilities', $this->WorkRequest->Item->Facility->find('list'));
+  }
+  
+  public function upsert($id = null){
     $this->set('title_for_layout', 'Create Work Request');
-    if ($this->request->is('post')) {
+    if ($this->request->is('post') || $this->request->is('put')) {
       $this->WorkRequest->create();
       if ($this->WorkRequest->save($this->request->data)) {
         $this->redirect(array('action' => 'index'));
@@ -44,7 +68,12 @@ class WorkRequestsController extends AppController {
         $this->Session->setFlash(__('The work request could not be saved. Please, try again.'));
       }
     }
+    $this->set('workPriorities', $this->WorkRequest->WorkPriority->find('list'));
+    $this->set('workTrades', $this->WorkRequest->WorkTrade->find('list'));
+    $this->set('requestors', $this->WorkRequest->Requestor->find('list'));
+    $this->set('items', $this->WorkRequest->Item->find('list'));
     
+    if ($id) $this->request->data = $this->WorkRequest->findById($id);
   }
 }
 ?>

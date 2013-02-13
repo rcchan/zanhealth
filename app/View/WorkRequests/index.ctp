@@ -33,7 +33,7 @@
       "bPaginate": false,
       "oLanguage": { "sZeroRecords": "No work orders were found" }
     });
-    dt.wrap('<div style="width:100%; height: 500px; overflow: auto; white-space: nowrap;">').parent().doubleScroll().css('overflow-y', 'auto');
+    dt.wrap('<div style="width:100%; max-height: 500px; overflow: auto; white-space: nowrap;">').parent().doubleScroll().css('overflow-y', 'auto');
     
     $('thead.data_filters input').keyup( function () {
       dt.fnFilter( this.value, $('thead.data_filters input, thead.data_filters select').index(this) );
@@ -55,7 +55,7 @@
     <thead>
       <tr>
         <td>No.</td>
-        <td>Requeset ID</td>
+        <td>Request ID</td>
         <td>Asset Name</td>
         <td>Asset Number</td>
         <td>Received Date</td>
@@ -66,16 +66,17 @@
         <td>Work Trade</td>
       </tr>
     </thead>
+    
     <tbody>
     <? 
       $count = 0;
       foreach ($data as $d){
     ?>
       <tr>
-        <td><?= $count ?></td>
-        <td><?= $d['WorkRequest']['id'] ?></td>
+        <td><?= ++$count ?></td>
+        <td><?= $this->Html->link($d['WorkRequest']['id'], array('action' => 'edit', $d['WorkRequest']['id'])) ?></td>
         <td><?= $d['Item']['name'] ?></td>
-        <td><?= $d['Item']['domain'] ?>-<?= $d['Item']['tag'] ?>/HCEU</td>
+        <td><?= $d['Item']['identifier'] ?></td>
         <td><?= $d['WorkRequest']['date'] ?></td>
         <td><?= $d['WorkRequest']['expire'] ?></td>
         <td><?= $d['WorkPriority']['name'] ?></td>

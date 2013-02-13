@@ -49,11 +49,11 @@
           <b class="caret"></b>
         </a>
         <ul class="dropdown-menu">
-          <li><a href="#">New Work Request</a></li>
+          <li><a href="/workRequests/create">New Work Request</a></li>
           <li><a href="/workRequests">View Requests</a></li>
-          <li><a href="/workRequests/closed">Closed Work Requests</a></li>
-          <li><a href="#">Reports by Engineer</a></li>
-          <li><a href="#">Reports by Health Facility</a></li>
+          <li><a href="/workRequests/status/closed">Closed Work Requests</a></li>
+          <li><a href="/workRequests/requestor">Reports by Engineer</a></li>
+          <li><a href="/workRequests/facility">Reports by Health Facility</a></li>
         </ul>
       </li>
       <li class="dropdown">
