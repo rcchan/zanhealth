@@ -72,32 +72,34 @@
     ?>
   </head>
   <body>
-    <div id="flash" class="alert">
-      <button type="button" class="close" data-dismiss="alert">&times;</button>
-      <?php echo $this->Session->flash(); ?>
-    </div>
-    <div id="container" class="span10 offset1">
-      <? if (!isset($layout_header) || $layout_header !== false){ ?>
+    <div style="min-height: 100%; position: relative; padding-bottom: 30px;">
+      <div id="flash" class="alert">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <?php echo $this->Session->flash(); ?>
+      </div>
+      <div id="container" class="span10 offset1">
+        <? if (!isset($layout_header) || $layout_header !== false){ ?>
+          <div class="row">
+            <div id="header" class="span10">
+              <?= $this->Html->image('banner.jpg', array('class' => 'banner')) ?>
+              <?= $this->element('navbar'); ?>
+            </div>
+          </div>
+        <? } ?>
         <div class="row">
-          <div id="header" class="span10">
-            <?= $this->Html->image('banner.jpg', array('class' => 'banner')) ?>
-            <?= $this->element('navbar'); ?>
+          <div id="content" class="span10">
+            <?php echo $this->fetch('content'); ?>
           </div>
         </div>
-      <? } ?>
-      <div class="row">
-        <div id="content" class="span10">
-          <?php echo $this->fetch('content'); ?>
+        <div class="row">
+          <div id="footer" class="span10">
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div id="footer" class="span10">
-        </div>
+      <div id="footer">
+        Open Source LAGPL v3 Licensed,
+        <a target="_blank" href="http://rcchan.com">Copyright &copy; 2013 Ryan Chan</a>
       </div>
-    </div>
-    <div id="footer">
-      Open Source LAGPL v3 Licensed,
-      <a target="_blank" href="http://rcchan.com">Copyright &copy; 2013 Ryan Chan</a>
     </div>
   </body>
 </html>
