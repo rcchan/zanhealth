@@ -57,14 +57,7 @@
         </ul>
       </li>
       <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-          Make Orders
-          <b class="caret"></b>
-        </a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Make Orders</a></li>
-          <li><a href="#">View Orders</a></li>
-        </ul>
+        <a href="#">Needs List</a>
       </li>
       <? if ($user){ ?>
         <li class="dropdown pull-right">
