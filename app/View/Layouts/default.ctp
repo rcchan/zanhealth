@@ -77,12 +77,14 @@
       <?php echo $this->Session->flash(); ?>
     </div>
     <div id="container" class="span10 offset1">
-      <div class="row">
-        <div id="header" class="span10">
-          <?= $this->Html->image('banner.jpg', array('class' => 'banner')) ?>
-          <?= $this->element('navbar'); ?>
+      <? if (!isset($layout_header) || $layout_header !== false){ ?>
+        <div class="row">
+          <div id="header" class="span10">
+            <?= $this->Html->image('banner.jpg', array('class' => 'banner')) ?>
+            <?= $this->element('navbar'); ?>
+          </div>
         </div>
-      </div>
+      <? } ?>
       <div class="row">
         <div id="content" class="span10">
           <?php echo $this->fetch('content'); ?>

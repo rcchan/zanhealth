@@ -51,5 +51,12 @@ class ItemsController extends AppController {
     $this->set('facilities', $this->Item->Facility->find('list'));
     $this->set('vendors', $this->Item->Vendor->find('list'));
   }
+  
+  public function history($id){
+    $this->loadModel('WorkRequest');
+    $this->set('layout_header', false);
+    $this->set('data', $this->WorkRequest->find('all', array('conditions' => array('item_id' => $id))));
+    $this->render('/WorkRequests/index');
+  }
 }
 ?>
