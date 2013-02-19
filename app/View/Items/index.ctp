@@ -70,7 +70,7 @@
     </thead>
     <thead class="data_filters">
       <tr>
-        <td><input type="text" placeholder="Filter by No."></td>
+        <td></td>
         <td><input type="text" placeholder="Filter by Asset No."></td>
         <td><input type="text" placeholder="Filter by Asset Name"></td>
         <td>
