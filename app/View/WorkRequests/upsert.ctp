@@ -1,3 +1,8 @@
+<script type="text/javascript">
+  $(window).load(function(){
+    $('#WorkRequestDate,#WorkRequestExpire').datetimepicker({dateFormat: 'yy-mm-dd', parse: 'loose'});
+  });
+</script>
 <div class="form well">
   <?php echo $this->Form->create('WorkRequest'); ?>
     <fieldset>
@@ -6,10 +11,10 @@
       echo $this->Form->hidden('id');
       echo $this->Form->input('owner', array('label' => 'Assigned to'));
       echo $this->Form->input('item_id');
-      echo $this->Form->input('date', array('label' => 'Received Date'));
-      echo $this->Form->input('expire', array('label' => 'Required Date'));
       echo $this->Form->input('work_priority_id');
       echo $this->Form->input('type');
+      echo $this->Form->input('date', array('label' => 'Received Date', 'type' => 'text', 'default' => date('Y-m-d H:i')));
+      echo $this->Form->input('expire', array('label' => 'Required Date', 'type' => 'text', 'default' => date('Y-m-d H:i')));
       echo $this->Form->input('status', array('options' => array('Open' => 'Open', 'Closed' => 'Closed')));
       echo $this->Form->input('requestor_id', array('selected' => $user['id']));
       echo $this->Form->input('work_trade_id');

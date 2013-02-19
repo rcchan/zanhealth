@@ -64,6 +64,7 @@
       echo $this->Html->script('jquery-ui-1.9.2.custom.min.js');
       echo $this->Html->script('bootstrap.min');
       echo $this->Html->script('jquery.doubleScroll');
+      echo $this->Html->script('jquery.datetimepicker');
 
       echo $this->fetch('meta');
       echo $this->fetch('css');
