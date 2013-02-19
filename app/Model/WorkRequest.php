@@ -45,7 +45,7 @@ class WorkRequest extends AppModel {
 		'date' => array(
 			'datetime' => array(
 				'rule' => array('datetime'),
-				//'message' => 'Your custom message here',
+				'message' => 'Invalid date/time',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -55,7 +55,7 @@ class WorkRequest extends AppModel {
 		'expire' => array(
 			'datetime' => array(
 				'rule' => array('datetime'),
-				//'message' => 'Your custom message here',
+				'message' => 'Invalid date/time',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -65,7 +65,7 @@ class WorkRequest extends AppModel {
 		'completed' => array(
 			'datetime' => array(
 				'rule' => array('datetime'),
-				//'message' => 'Your custom message here',
+				'message' => 'Invalid date/time',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -75,7 +75,7 @@ class WorkRequest extends AppModel {
 		'work_priority_id' => array(
 			'naturalnumber' => array(
 				'rule' => array('naturalnumber'),
-				//'message' => 'Your custom message here',
+				'message' => 'Invalid id provided',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -85,7 +85,7 @@ class WorkRequest extends AppModel {
 		'item_id' => array(
 			'naturalnumber' => array(
 				'rule' => array('naturalnumber'),
-				//'message' => 'Your custom message here',
+				'message' => 'Not a valid item',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -95,7 +95,7 @@ class WorkRequest extends AppModel {
 		'estimated_cost' => array(
 			'naturalnumber' => array(
 				'rule' => array('naturalnumber'),
-				//'message' => 'Your custom message here',
+				'message' => 'Must input a valid cost',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -105,7 +105,7 @@ class WorkRequest extends AppModel {
 		'cost' => array(
 			'naturalnumber' => array(
 				'rule' => array('naturalnumber'),
-				//'message' => 'Your custom message here',
+				'message' => 'Must input a valid cost',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -115,7 +115,7 @@ class WorkRequest extends AppModel {
 		'work_trade_id' => array(
 			'naturalnumber' => array(
 				'rule' => array('naturalnumber'),
-				//'message' => 'Your custom message here',
+				'message' => 'Invalid work trade',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -125,7 +125,7 @@ class WorkRequest extends AppModel {
 		'requestor_id' => array(
 			'naturalnumber' => array(
 				'rule' => array('naturalnumber'),
-				//'message' => 'Your custom message here',
+				'message' => 'Not a valid user',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
