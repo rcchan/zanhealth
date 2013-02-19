@@ -13,7 +13,13 @@ class NeedTest extends CakeTestCase {
  * @var array
  */
 	public $fixtures = array(
-		'app.need'
+		'app.need',
+		'app.facility',
+		'app.district',
+		'app.zone',
+		'app.item',
+		'app.vendor',
+		'app.category'
 	);
 
 /**

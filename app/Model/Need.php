@@ -3,6 +3,7 @@ App::uses('AppModel', 'Model');
 /**
  * Need Model
  *
+ * @property Facility $Facility
  */
 class Need extends AppModel {
 
@@ -19,15 +20,72 @@ class Need extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'id' => array(
+    'id' => array(
 			'naturalnumber' => array(
 				'rule' => array('naturalnumber'),
-				//'message' => 'Your custom message here',
+				'message' => 'Invalid id provided',
+				'allowEmpty' => true,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+		'name' => array(
+			'notempty' => array(
+				'rule' => array('notempty'),
+				'message' => 'Name must be specified',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
+		'facility_id' => array(
+			'naturalnumber' => array(
+				'rule' => array('naturalnumber'),
+				'message' => 'You must select a facility',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+		'room' => array(
+			'notempty' => array(
+				'rule' => array('notempty'),
+				'message' => 'You must specify a room',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+		'quantity' => array(
+			'naturalnumber' => array(
+				'rule' => array('naturalnumber'),
+				'message' => 'You must specify a quantity',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+	);
+
+	//The Associations below have been created with all possible keys, those that are not needed can be removed
+
+/**
+ * belongsTo associations
+ *
+ * @var array
+ */
+	public $belongsTo = array(
+		'Facility' => array(
+			'className' => 'Facility',
+			'foreignKey' => 'facility_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		)
 	);
 }
