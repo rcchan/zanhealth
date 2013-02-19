@@ -1,4 +1,4 @@
-<div class="form">
+<div class="form well">
   <?php echo $this->Form->create('WorkRequest'); ?>
     <fieldset>
     <legend><?php echo __('Add Work Request'); ?></legend>
@@ -11,9 +11,13 @@
       echo $this->Form->input('work_priority_id');
       echo $this->Form->input('type');
       echo $this->Form->input('status', array('options' => array('Open' => 'Open', 'Closed' => 'Closed')));
-      echo $this->Form->input('work_trade_id');
-      echo $this->Form->input('description');
       echo $this->Form->input('requestor_id', array('selected' => $user['id']));
+      echo $this->Form->input('work_trade_id');
+    ?>
+    <br />
+    <?php echo $this->Form->input('description', array('div' => 'description')); ?>
+    <br />
+    <?php
       echo $this->Form->input('cause_description');
       echo $this->Form->input('actions_taken');
       echo $this->Form->input('prevention_taken');
