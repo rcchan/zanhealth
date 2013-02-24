@@ -203,7 +203,7 @@ while (!feof($file)){
     ':qty' => $line[$i++] ?: NULL,
     ':category' => $line[$i++] ? isset($category[$line[$i-1]]) ? $category[$line[$i-1]] : $category[$line[$i-1]] = count($category) + 1: NULL,
     ':spec' => $line[$i++] ?: NULL,
-    ':price' => $line[$i++] ?: NULL
+    ':price' => trim($line[$i++]) ?: NULL
   );
 }
 
