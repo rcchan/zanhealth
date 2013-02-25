@@ -57,7 +57,7 @@
         </ul>
       </li>
       <li class="dropdown">
-        <a href="#">Needs List</a>
+        <?= $this->Html->link('Needs List', array('controller' => 'needs', 'action' => 'index')) ?>
       </li>
       <? if ($user){ ?>
         <li class="dropdown pull-right">

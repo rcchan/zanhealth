@@ -1,0 +1,34 @@
+<div>
+  <table class="items">
+    <thead>
+      <tr>
+        <th>No.</th>
+        <th>Asset No.</th>
+        <th>Name</th>
+        <th>Health Facility</th>
+        <th>Room</th>
+        <th>Manufacturer</th>
+        <th>Model</th>
+        <th>Serial No.</th>
+        <th>Utilization</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each items}}
+        <tr>
+          <td>{{count}}</td>
+          <td><a href="/item/history/{{id}}" target="history" onclick="window.open(this.href, 'history', 'width=600, height=400'); return false;">{{identifier}}</td>
+          <td>{{name}}</td>
+          <td>{{facility.name}}</td>
+          <td>{{room}}</td>
+          <td>{{manufacturer}}</td>
+          <td>{{model}}</td>
+          <td>{{serial_number}}</td>
+          <td>{{utilization}}</td>
+          <td>{{status}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

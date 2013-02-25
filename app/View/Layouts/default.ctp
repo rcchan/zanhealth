@@ -65,6 +65,7 @@
       echo $this->Html->script('bootstrap.min');
       echo $this->Html->script('jquery.doubleScroll');
       echo $this->Html->script('jquery.datetimepicker');
+      echo $this->Html->script('handlebars');
 
       echo $this->fetch('meta');
       echo $this->fetch('css');
