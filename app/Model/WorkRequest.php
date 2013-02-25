@@ -92,26 +92,6 @@ class WorkRequest extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'estimated_cost' => array(
-			'naturalnumber' => array(
-				'rule' => array('naturalnumber'),
-				'message' => 'Must input a valid cost',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'cost' => array(
-			'naturalnumber' => array(
-				'rule' => array('naturalnumber'),
-				'message' => 'Must input a valid cost',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
 		'work_trade_id' => array(
 			'naturalnumber' => array(
 				'rule' => array('naturalnumber'),

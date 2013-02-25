@@ -19,7 +19,9 @@ class NeedTest extends CakeTestCase {
 		'app.zone',
 		'app.item',
 		'app.vendor',
-		'app.category'
+		'app.category',
+		'app.user',
+		'app.role'
 	);
 
 /**

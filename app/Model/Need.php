@@ -4,6 +4,7 @@ App::uses('AppModel', 'Model');
  * Need Model
  *
  * @property Facility $Facility
+ * @property User $User
  */
 class Need extends AppModel {
 
@@ -13,7 +14,7 @@ class Need extends AppModel {
  * @var string
  */
 	public $displayField = 'name';
-
+  
 /**
  * Validation rules
  *
@@ -70,7 +71,28 @@ class Need extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
+    'date' => array(
+			'date' => array(
+				'rule' => array('date'),
+				'message' => 'Invalid date/time',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+    'user_id' => array(
+			'naturalnumber' => array(
+				'rule' => array('naturalnumber'),
+				'message' => 'Invalid user specified',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
 	);
+
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
@@ -83,6 +105,13 @@ class Need extends AppModel {
 		'Facility' => array(
 			'className' => 'Facility',
 			'foreignKey' => 'facility_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'User' => array(
+			'className' => 'User',
+			'foreignKey' => 'user_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
