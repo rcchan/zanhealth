@@ -1,9 +1,10 @@
 <script type="text/javascript">
   $(window).load(function(){
     init_date = $('#NeedDate').val();
+    init_stage = $('#NeedStage').val();
     $('#NeedUpsertForm').submit(function(){
       var $d = $('#NeedDate');
-      if ($d.val() == '0000-00-00' || $d.val() != init_date)
+      if (!$d.val() || $d.val() == '0000-00-00' || $d.val() != init_date || $('#NeedStage').val() != init_stage)
         $d.val($.datepicker.formatDate('yy-mm-dd', new Date()));
     });
   });
