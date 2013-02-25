@@ -29,7 +29,7 @@
       echo $this->Form->input('manufacturer');
       echo $this->Form->input('model');
       echo $this->Form->input('serial_number');
-      echo $this->Form->input('year_manufactured', array('type' => 'number'));
+      echo $this->Form->input('year_manufactured');
       echo $this->Form->input('date_received', array('type' => 'text'));
       echo $this->Form->input('price');
       echo $this->Form->input('vendor_id');
