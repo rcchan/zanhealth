@@ -58,5 +58,23 @@ class ItemsController extends AppController {
     $this->set('data', $this->WorkRequest->find('all', array('conditions' => array('item_id' => $id))));
     $this->render('/WorkRequests/index');
   }
+  
+  public function upsert($id = null){
+    $this->set('title_for_layout', 'Create New Item');
+    if ($this->request->is('post') || $this->request->is('put')) {
+      $this->Item->create();
+      if ($this->Item->save($this->request->data)) {
+        $this->redirect(array('action' => 'index'));
+      } else {
+        $this->Session->setFlash(__('The item could not be saved. Please, try again.'));
+      }
+    }
+    
+    $this->set('facilities', $this->Item->Facility->find('list'));
+    $this->set('vendors', $this->Item->Vendor->find('list'));
+    $this->set('categories', $this->Item->Category->find('list'));
+    
+    if ($id) $this->request->data = $this->Item->findById($id);
+  }
 }
 ?>

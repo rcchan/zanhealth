@@ -147,7 +147,7 @@
       <? foreach ($data as $i => $d){ ?>
         <tr>
           <td><?= $i+1 ?></td>
-          <td><?= $this->Html->link($d['Item']['identifier'], array('action' => 'history', $d['Item']['id']), array('target' => 'history', 'onclick' => 'window.open(this.href, "history", "width=600, height=400"); return false;')) ?></td>
+          <td><?= $this->Html->link($d['Item']['identifier'], array('action' => 'edit', $d['Item']['id'])) ?></td>
           <td><?= $d['Item']['name'] ?></td>
           <td><?= $d['Item']['utilization'] ?></td>
           <td><?= $d['Item']['status'] ?></td>
