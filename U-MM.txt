@@ -172,7 +172,7 @@
 172	Quadripon Bed					MOH							MMH Physiotherapy	1	Gymnasium		Fully Functional	Normal		Biomedical	1	Other				
 173	Treatment Bed					DANIDA							MMH Physiotherapy	1	Gymnasium		Fully Functional	Normal		Biomedical	1	Other				
 174	Tilting bed					MOH							MMH Physiotherapy	1	Gymnasium		Fully Functional	Very High		Biomedical	1	Other				
-175	Treatment Bed					DANIDA							MMH Physiotherapy	1	Gymnasium		Full Functional	Very High		Biomedical	1	Other				
+175	Treatment Bed					DANIDA							MMH Physiotherapy	1	Gymnasium		Fully Functional	Very High		Biomedical	1	Other				
 176	X-Ray Light Box					MOH							MMH Physiotherapy	1	Gymnasium		Fully Functional	Very High		Biomedical	1	Other				
 177	Treatment Bed					DANIDA							MMH Physiotherapy	1	Gymnasium		Needs Minor Repair	Very Low		Biomedical	1	Other				
 178	Tense Machine	BTL Industries	btl-5000			DANIDA							MMH Physiotherapy	1	Veranda		Not Functional	No Utilization		Biomedical	1	Other				
@@ -483,13 +483,13 @@
 483	Fetal Doppler					Zayadesa							MMH Maternity	1	Antenatal Staff Room		Fully Functional	No Utilization	Missing 1 9V Battery	Biomedical	1	Other				
 484	Blood Pressure Machine (Manual)	Reister	nova-presameter	110100622		MOH							MMH Hypertension Clinic	1	Hypertension clinic		Fully Functional	Normal	Missing 2 AA Batteries	Biomedical	1	Other				
 485	Autoclave	Chas F Thacray											MMH Hypertension Clinic	1	Hypertension clinic		Fully Functional	Normal		Biomedical	1	Other				
-486	CT Scanner Exposure Control	Siemens	8598885K1555	2830		MOH	Pacific Diagnostics 	2010-01-01	2012			Pacific Diagnostics	MMH CT Scan	1	Operator's Room		Fully Functional	No Utilization		Biomedical	1	Other				
+486	CT Scanner Exposure Control	Siemens	8598885K1555	2830		MOH	Pacific Diagnostics 	2010-01-01	2012-01-01			Pacific Diagnostics	MMH CT Scan	1	Operator's Room		Fully Functional	No Utilization		Biomedical	1	Other				
 487	CT Scanner Injection System Control	Medrad	VRC60025	403002403a-2556948		MOH	Pacific Diagnostics 	2010-01-01					MMH CT Scan	1	Operator's Room		Fully Functional	No Utilization	Not used because scanner not functional. +255 222701032 (Supplier and Service coy no.)	Biomedical	1	Other				
-488	CT Scanner Injection System Control	Medrad	VEC600	403002739A57055		MOH	Pacific Diagnostics 	2010-01-01	2012			Pacific Diagnostics	MMH CT Scan	1	Operator's Room		Fully Functional	No Utilization	Not used because scanner not functional. 	Biomedical	1	Other				
-489	CT Scanner Table	Siemens	08596566	13313	2008	MOH	Pacific Diagnostics 	2010-01-01	2012			Pacific Diagnostics	MMH CT Scan	1	Examination Room		Fully Functional	No Utilization	Not used because scanner not functional. 	Biomedical	1	Other				
-490	CT Scanner	Siemens	10165880	29271	2008	MOH	Pacific Diagnostics 	2010-01-01	2012			Pacific Diagnostics	MMH CT Scan	1	Examination Room		Not Functional	No Utilization	Not used because scanner not functional. +255 222701032 (Supplier and Service coy no.)	Biomedical	1	Other				
-491	CT Scanner Injection System	Medrad	VHU600	57026		MOH	Pacific Diagnostics 	2010-01-01	2012			Pacific Diagnostics	MMH CT Scan	1	Examination Room		Fully Functional	No Utilization	X-Ray tube needs to be replaced	Biomedical	1	Other				
-492	CT Scanner Generator	Siemens	10165884	1431	2010	MOH	Pacific Diagnostics 	2010-01-01	2012			Pacific Diagnostics	MMH CT Scan	1	Examination Room		Fully Functional	Normal	Not used because scanner not functional. +255 222701032 (Supplier and Service coy no.)	Biomedical	1	Other				
+488	CT Scanner Injection System Control	Medrad	VEC600	403002739A57055		MOH	Pacific Diagnostics 	2010-01-01	2012-01-01			Pacific Diagnostics	MMH CT Scan	1	Operator's Room		Fully Functional	No Utilization	Not used because scanner not functional. 	Biomedical	1	Other				
+489	CT Scanner Table	Siemens	08596566	13313	2008	MOH	Pacific Diagnostics 	2010-01-01	2012-01-01			Pacific Diagnostics	MMH CT Scan	1	Examination Room		Fully Functional	No Utilization	Not used because scanner not functional. 	Biomedical	1	Other				
+490	CT Scanner	Siemens	10165880	29271	2008	MOH	Pacific Diagnostics 	2010-01-01	2012-01-01			Pacific Diagnostics	MMH CT Scan	1	Examination Room		Not Functional	No Utilization	Not used because scanner not functional. +255 222701032 (Supplier and Service coy no.)	Biomedical	1	Other				
+491	CT Scanner Injection System	Medrad	VHU600	57026		MOH	Pacific Diagnostics 	2010-01-01	2012-01-01			Pacific Diagnostics	MMH CT Scan	1	Examination Room		Fully Functional	No Utilization	X-Ray tube needs to be replaced	Biomedical	1	Other				
+492	CT Scanner Generator	Siemens	10165884	1431	2010	MOH	Pacific Diagnostics 	2010-01-01	2012-01-01			Pacific Diagnostics	MMH CT Scan	1	Examination Room		Fully Functional	Normal	Not used because scanner not functional. +255 222701032 (Supplier and Service coy no.)	Biomedical	1	Other				
 493	X-Ray Light Box	Planilux			2010	MOH							MMH CT Scan	1	Operator's Room		Fully Functional	Normal		Biomedical	1	Other				
 494	X-Ray Light Box				2010	MOH							MMH CT Scan	1	Operator's Room		Fully Functional	Normal		Biomedical	1	Other				
 495	Laryngoscope					MOH							MMH Maternity	1	Antenatal Staff Room		Needs Minor Repair	Normal		Biomedical	1	Other				
