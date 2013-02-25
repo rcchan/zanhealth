@@ -12,7 +12,7 @@
       echo $this->Form->input('owner', array('label' => 'Assigned to'));
       echo $this->Form->input('item_id');
       echo $this->Form->input('work_priority_id');
-      echo $this->Form->input('type');
+      echo $this->Form->input('type', array('options' => array('Breakdown' => 'Breakdown', 'Preventative' => 'Preventative')));
       echo $this->Form->input('date', array('label' => 'Received Date', 'type' => 'text', 'default' => date('Y-m-d H:i')));
       echo $this->Form->input('expire', array('label' => 'Required Date', 'type' => 'text', 'default' => date('Y-m-d H:i')));
       echo $this->Form->input('status', array('options' => array('Open' => 'Open', 'Closed' => 'Closed')));
@@ -21,14 +21,15 @@
     ?>
     <br />
     <?php echo $this->Form->input('description', array('div' => 'description')); ?>
+    <?php echo $this->Form->input('cost'); ?>
     <br />
     <?php
       echo $this->Form->input('cause_description');
       echo $this->Form->input('actions_taken');
       echo $this->Form->input('prevention_taken');
-      echo $this->Form->input('facility_comments');
+      //echo $this->Form->input('facility_comments');
       echo $this->Form->input('engineer_comments');
-      echo $this->Form->input('manager_comments');
+      //echo $this->Form->input('manager_comments');
     ?>
     </fieldset>
   <?php echo $this->Form->end(__('Submit')); ?>
