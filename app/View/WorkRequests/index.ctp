@@ -47,7 +47,7 @@
   <?=
     $this->Html->link(
       $this->Html->image('new_work_request.png'),
-      array('action' => 'create'),
+      array('controller' => 'workRequests', 'action' => 'create'),
       array('escape' => false, 'style' => 'position: absolute; top:6px; left: 10px; z-index: 1')
     )
   ?>

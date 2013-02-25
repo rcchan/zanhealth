@@ -74,6 +74,9 @@ class ItemsController extends AppController {
     $this->set('vendors', $this->Item->Vendor->find('list'));
     $this->set('categories', $this->Item->Category->find('list'));
     
+    $this->loadModel('WorkRequest');
+    $this->set('data', $this->WorkRequest->find('all', array('conditions' => array('item_id' => $id))));
+    
     if ($id) $this->request->data = $this->Item->findById($id);
   }
 }

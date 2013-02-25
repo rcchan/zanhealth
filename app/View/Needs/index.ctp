@@ -50,7 +50,7 @@
   <?=
     $this->Html->link(
       $this->Html->image('new_need.png'),
-      array('action' => 'create'),
+      array('controller' => 'needs', 'action' => 'create'),
       array('escape' => false, 'style' => 'position: absolute; top:6px; left: 10px; z-index: 1')
     )
   ?>

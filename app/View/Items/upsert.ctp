@@ -45,4 +45,6 @@
     ?>
     </fieldset>
   <?php echo $this->Form->end(__('Submit')); ?>
+  <h4>Work Request History</h4>
+  <?= $this->render('/WorkRequests/index', 'ajax');?>
 </div>
