@@ -15,7 +15,7 @@
 015	Incubator	Thermo scientific	Heraeus B6200	51015772								Sanas	MMH Laboratory	2	Microbiology		Fully Functional	Normal		Biomedical	1	Other				
 016	Microscope	Carl Zeiss	Primo Star	3133000136		USAID		2009-01-01					MMH Laboratory	2	Microbiology		Fully Functional	Normal		Biomedical	1	Other				
 017	Refrigerator	Geepas				ADB		2007-01-01					MMH Laboratory	2	TB Lab		Fully Functional	Normal		Biomedical	1	Other				
-018	Water Bath	Thermo Scientific	180 Series Water Bath	208837-28	2009	ICAP						"Sanas, ICAP"	MMH Laboratory	2	TB Lab		Fully Functional	Normal	"Calibrated by Sanas, Preventive Maitenance by Sanas"	Biomedical	1	Other				
+018	Water Bath	Thermo Scientific	180 Series Water Bath	208837-28	2009	ICAP						Sanas, ICAP	MMH Laboratory	2	TB Lab		Fully Functional	Normal	Calibrated by Sanas, Preventive Maitenance by Sanas	Biomedical	1	Other				
 019	Autoclave	Memmert	FN500	920458		ICAP		2010-01-01				ICAP	MMH Laboratory	2	TB Lab		Fully Functional	Normal		Biomedical	1	Other				
 020	Magnetic Stirrer (Heated)	Velp Scientifica	F20500060	116724				2010-01-01					MMH Laboratory	2	TB Lab		Fully Functional	Normal		Biomedical	1	Other				
 021	Scale (Clinical Laboratory)	Ohaus	Harvard Trip Balance									Sanas	MMH Laboratory	2	TB Lab		Fully Functional	Normal	Calibrated by Sanas	Biomedical	1	Other				
@@ -30,8 +30,8 @@
 030	Refrigerator	Dairei											MMH Laboratory	2	Haematology Lab		Fully Functional	Normal		Biomedical	1	Other				
 031	Refrigerator	Fiocchetti				ICAP							MMH Laboratory	2	Haematology Lab		Fully Functional	Normal		Biomedical	1	Other				
 032	Haematology Analyzer	Horiba Abx	Pentra XL80	20466AN		ICAP		2005-01-01					MMH Laboratory	2	Haematology Lab		Fully Functional	Normal		Biomedical	1	Other				
-033	Water Bath	Kedee	Tissue Water Bath	51260		ICAP							MMH Laboratory	2	Histopathology		Fully Functional	No Utilization	"Incompatible plug, 110v 60HZ"	Biomedical	1	Other				
-034	Biochemistry Analyzer	Erma Inc	AE-600	3921		ICAP							MMH Laboratory	2	Histopathology		Fully Functional	No Utilization	"Some accessories missing + incompatible plug, 90V"	Biomedical	1	Other				
+033	Water Bath	Kedee	Tissue Water Bath	51260		ICAP							MMH Laboratory	2	Histopathology		Fully Functional	No Utilization	Incompatible plug, 110v 60HZ	Biomedical	1	Other				
+034	Biochemistry Analyzer	Erma Inc	AE-600	3921		ICAP							MMH Laboratory	2	Histopathology		Fully Functional	No Utilization	Some accessories missing + incompatible plug, 90V	Biomedical	1	Other				
 035	Rotary Microtome	Spencers		1010SMF004		ADB	Lab Equip						MMH Laboratory	2	Histopathology		Not Functional	No Utilization		Biomedical	1	Other				
 036	Tissue Embedding Center	Jinhua Kedi	KD-BM	8401									MMH Laboratory	2	Histopathology		Not Functional	No Utilization	Accessories incomplete	Biomedical	1	Other				
 037	Tissue Bath-Baking Processor	Jinhua Kedi	KD-T	5222	2010	MOH	Lab Equip						MMH Laboratory	2	Histopathology		Not Functional	No Utilization	Accessories incomplete	Biomedical	1	Other				
@@ -45,7 +45,7 @@
 045	Autoclave	Axiom	AX-75L	2323	2009			2010-01-01					MMH Laboratory	2	Washing		Fully Functional	Normal		Biomedical	1	Other				
 046	Hot Plate	Reme											MMH Laboratory	2	Washing		Fully Functional	Normal		Biomedical	1	Other				
 047	Autoclave												MMH Laboratory	2	Washing		Not Functional	No Utilization		Biomedical	1	Other				
-048	Safety Cabinet (Microbiological)	Nuve	MN		2009	ICAP						Kas Medics	MMH Laboratory	2	Main Corridor		Not Functional	No Utilization	"Never been used, key slot is broken, bulb is missing, key is missing. Damaged from movement"	Biomedical	1	Other				
+048	Safety Cabinet (Microbiological)	Nuve	MN		2009	ICAP						Kas Medics	MMH Laboratory	2	Main Corridor		Not Functional	No Utilization	Never been used, key slot is broken, bulb is missing, key is missing. Damaged from movement	Biomedical	1	Other				
 049	Refrigerator	Fiocchetti	super arctic 7002t		2009	ICAP		2009-01-01					MMH Laboratory	2	Store		Fully Functional	Normal		Biomedical	1	Other				
 050	Refrigerator	Fiocchetti	super arctic 7002t		2009	ICAP		2009-01-01					MMH Laboratory	2	Store		Fully Functional	Normal		Biomedical	1	Other				
 051	Chemistry Analyzer	Biomedical System International	Fully	80168		ICAP							MMH Laboratory	2	Store		Fully Functional	No Utilization	Another one in use	Biomedical	1	Other				
@@ -71,19 +71,19 @@
 071	Clotting Analyzer	Human	Humaclot-Duo	1127		ADB							MMH Laboratory	2	Store		Not Functional	No Utilization		Biomedical	1	Other				
 072	Blood Chemistry Machine	Human	Humaclot-Duo	1126		ADB							MMH Laboratory	2	Store		Not Functional	No Utilization		Biomedical	1	Other				
 073	Centrifuge	Hettich	Rotofix 32	0039164-02-00	2006			2007-01-01					MMH Laboratory	2	Store		Not Functional	No Utilization		Biomedical	1	Other				
-074	Incubator	Binder	ED115	08-47930									MMH Laboratory	2	Clinical Chemistry		Fully Functional	Very High	"International Hotline: +49(0) 7462/2005-555, service@binder-world.com"	Biomedical	1	Other				
+074	Incubator	Binder	ED115	08-47930									MMH Laboratory	2	Clinical Chemistry		Fully Functional	Very High	International Hotline: +49(0) 7462/2005-555, service@binder-world.com	Biomedical	1	Other				
 075	Elisa Machine	Awareneness Technology	Siar Fax 4700	4700-1059									MMH Laboratory	2	Clinical Chemistry		Fully Functional	Normal		Biomedical	1	Other				
 076	Chemistry Analyzer	Biosystems	BTS-305	801550268		ICAP	Chemo Quip						MMH Laboratory	2	Clinical Chemistry		Fully Functional	Normal		Biomedical	1	Other				
 077	Electrolyte Analyzer	Human	Biolyte 2000	700174			Chemo Quip	2010-01-01					MMH Laboratory	2	Clinical Chemistry		Fully Functional	Normal		Biomedical	1	Other				
 078	Elisa Washer	Thermo Fisher	Well Washer 4 MK2	006-9-9166		CDC		2009-01-01					MMH Laboratory	2	Clinical Chemistry		Fully Functional	Normal		Biomedical	1	Other				
-079	Elisa Reader	Thermo Fisher	Multiskan	357-00120	2008	CDC	Kas Medics 					ICAP	MMH Laboratory	2	Clinical Chemistry		Fully Functional	Normal	"Kas Medics +255222111896, adarsha@kasmedics.com"	Biomedical	1	Other				
+079	Elisa Reader	Thermo Fisher	Multiskan	357-00120	2008	CDC	Kas Medics 					ICAP	MMH Laboratory	2	Clinical Chemistry		Fully Functional	Normal	Kas Medics +255222111896, adarsha@kasmedics.com	Biomedical	1	Other				
 080	Centrifuge	Digisystem Laboratory Instruments	DSC_300 SD	0505172				2009-01-01					MMH Laboratory	2	Clinical Chemistry		Fully Functional	Normal		Biomedical	1	Other				
 081	Chemistry Analyzer	Mindray	BS-200										MMH Laboratory	2	Clinical Chemistry		Fully Functional	No Utilization	Another one in use	Biomedical	1	Other				
 082	Chemistry Analyzer	Mindray	BS-200	WN-06100688				2010-01-01				ICAP	MMH Laboratory	2	Clinical Chemistry		Fully Functional	Very High		Biomedical	1	Other				
 083	Chemistry Analyzer	Biomedical System International	Fully	80336				2005-01-01					MMH Laboratory	2	Clinical Chemistry		Fully Functional	Normal		Biomedical	1	Other				
 084	Electrolyte Analyzer	Hunan	Humalyte	700175		CDC							MMH Laboratory	2	Clinical Chemistry		Not Functional	No Utilization		Biomedical	1	Other				
 085	Refrigerator	Safe	USS7480IKL	M22000110200				2005-01-01					MMH Laboratory	2	Clinical Chemistry		Fully Functional	Normal		Biomedical	1	Other				
-086	Refrigerator	LG	"Vitamin +, GR-V212R"										MMH Laboratory	2	Clinical Chemistry		Fully Functional	Normal		Biomedical	1	Other				
+086	Refrigerator	LG	Vitamin +, GR-V212R										MMH Laboratory	2	Clinical Chemistry		Fully Functional	Normal		Biomedical	1	Other				
 087	Microscope	Olympus	CX21FSI	CJ05427		CDC		2010-01-01					MMH Laboratory	2	Parasitology		Fully Functional	Normal		Biomedical	1	Other				
 088	Refrigerator	Fiocchetti	super arctic 7002t					2009-01-01					MMH Laboratory	2	Parasitology		Fully Functional	Normal		Biomedical	1	Other				
 089	Distiller	Thermo Scientific	D12661	126609062391									MMH Laboratory	2	Parasitology		Fully Functional	Normal		Biomedical	1	Other				
@@ -101,7 +101,7 @@
 101	Ultrasound	Siemmens	sonoline Sienna	DBE 0487	2002			2009-01-01					MMH Pediatric	2	Cot Ward A Echo Room		Not Functional	No Utilization		Biomedical	1	Other				
 102	Refrigerator	Whirlpool											MMH Pediatric	2	Cot Ward A Echo Room		Fully Functional	No Utilization		Biomedical	1	Other				
 103	Ultrasound	Medison 	Sonoace X8	b02508300004464				2011-01-01					MMH Pediatric	2	Cot Ward A Echo Room		Fully Functional	Normal		Biomedical	1	Other				
-104	Coagulation Meter	Roche	"3666794, Coaguchek X5"	UPO153784		Save a Child's Heart		2002-01-01					MMH Pediatric	2	Cot Ward A Echo Room		Not Functional	No Utilization	"Funder: Azur 58008, Israel, sach@barak-online.net, 972-3-558-9656"	Biomedical	1	Other				
+104	Coagulation Meter	Roche	3666794, Coaguchek X5	UPO153784		Save a Child's Heart		2002-01-01					MMH Pediatric	2	Cot Ward A Echo Room		Not Functional	No Utilization	Funder: Azur 58008, Israel, sach@barak-online.net, 972-3-558-9656	Biomedical	1	Other				
 105	Exam Bed												MMH Pediatric	2	Echo Room Cot Ward A		Fully Functional	No Utilization	no use because Ultrasound not in use	Biomedical	1	Other				
 106	Exam Bed												MMH Pediatric	2	Echo Room Cot Ward A		Fully Functional	No Utilization	no use because Ultrasound not in use	Biomedical	1	Other				
 107	Ward Bed												MMH Pediatric	1	Ward 1		Fully Functional	Normal		Biomedical	1	Other				
@@ -134,7 +134,7 @@
 134	Exam Bed												MMH Pediatric	2	Cot Ward A Corridor		Needs Major Repair	Very Low	2 table legs broken	Biomedical	1	Other				
 135	Weighing Scale	NWI OJH	MP 25			Chara							MMH Pediatric	2	Intensive Pediatric Care		Fully Functional	Normal		Biomedical	1	Other				
 136	Refrigerator	Merlow C-LC-TR	RG 2250 Indesit	DF23									MMH Pediatric	1	Cot Ward A Staff Room		Fully Functional	Normal		Biomedical	1	Other				
-137	Weighing Scale	Pelstar	1524kl healthometer	1524001652		Chara		1/1/2008					MMH Pediatric	2	Cot Ward A		Not Functional	No Utilization	"comes with infant-holding chair, technical support: 18006383722"	Biomedical	1	Other				
+137	Weighing Scale	Pelstar	1524kl healthometer	1524001652		Chara		1/1/2008					MMH Pediatric	2	Cot Ward A		Not Functional	No Utilization	comes with infant-holding chair, technical support: 18006383722	Biomedical	1	Other				
 138	Weighing Scale	Seca		032437		UNICEF							MMH Pediatric	2	Cot Ward A		Not Functional	No Utilization	comes with infant-holding tray	Biomedical	1	Other				
 139	Phototherapy Unit	Pema	xhz-90			Haukeland University							MMH Pediatric	2	Cot Ward A Corridor		Not Functional	No Utilization	switch not working	Biomedical	1	Other				
 140	Phototherapy Unit	Pema	XHZ-90			Haukeland University		2011-01-01					MMH Pediatric	2	Intensive Pediatric Care		Fully Functional	Normal		Biomedical	1	Other				
@@ -158,7 +158,7 @@
 158	Blood Pressure Machine (Manual)	Fazzini											MMH Pediatric	1	Cot Ward A Pediatric Clinic		Not functional	No Utilization	w/o cuff	Biomedical	1	Other				
 159	Blood Pressure Machine (Manual)	Provident		1450756									MMH Pediatric	2	Cot Ward A Pediatric Clinic		Fully Functional	Normal	with child cuff	Biomedical	1	Other				
 160	Blood Pressure Machine (Manual)	Spangler	lian scenic-5	477288									MMH Pediatric	1	Cot Ward A Pediatric Clinic		Not functional	No Utilization	with child cuff	Biomedical	1	Other				
-161	Nebulizer	Philips Respironics	porta-neb	11a1300016		Haukeland University		2012-01-01					MMH Pediatric	1	Cot Ward A Pediatric Clinic		Fully Functional	No Utilization	"this is a spare - another one is in use, technical supoort: 8001300845"	Biomedical	1	Other				
+161	Nebulizer	Philips Respironics	porta-neb	11a1300016		Haukeland University		2012-01-01					MMH Pediatric	1	Cot Ward A Pediatric Clinic		Fully Functional	No Utilization	this is a spare - another one is in use, technical supoort: 8001300845	Biomedical	1	Other				
 162	Exam Bed					MOH							MMH Physiotherapy	1	Room 1		Fully Functional	Very High		Biomedical	1	Other				
 163	Exam Bed					MOH							MMH Physiotherapy	1	Room 1		Fully Functional	Normal		Biomedical	1	Other				
 164	Infrared Lamp	Greenham				 							MMH Physiotherapy	1	Room 1		Fully Functional	Very High		Biomedical	1	Other				
@@ -190,7 +190,7 @@
 190	Ear Mold Machine and Compressor	GD Carlo de Grogi	5000t			Impact East Africa	Puretone Ltd						MMH ENT	1	ENT Hearing Aid Laboratory		Fully Functional	Very Low		Biomedical	1	Other				
 191	Exam Bed												MMH ENT	1	ENT Audiology Clinic		Fully Functional	Normal		Biomedical	1	Other				
 192	Tympanometer	Kamplex		663760				2007-01-01				Guy Mark UK Ltd.	MMH ENT	1	ENT Audiology Clinic		Needs Minor Repair	No Utilization	need to buy rechargeable battery with 4V or AA battery. Printer not working. Guy Mark Contact +44[0]1384410848 www.guymark.com	Biomedical	1	Other				
-193	Audiometer	"EB, Eikstein Bros Inc."	eb-350i	8093									MMH ENT	1	ENT Audiology Clinic		Not Functional	No Utilization		Biomedical	1	Other				
+193	Audiometer	EB, Eikstein Bros Inc.	eb-350i	8093									MMH ENT	1	ENT Audiology Clinic		Not Functional	No Utilization		Biomedical	1	Other				
 194	Rolling Pin Machine												MMH Physiotherapy	1	Veranda		Fully Functional	Normal		Biomedical	1	Other				
 195	Parallel Bars					MOH							MMH Physiotherapy	1	Veranda		Fully Functional	Normal		Biomedical	1	Other				
 196	Weighing Scale					Haukeland University							MMH Physiotherapy	2	Occupational Therapy		Fully Functional	Normal		Biomedical	1	Other				
@@ -199,7 +199,7 @@
 199	Oven	Promedics	HCALI0800	69190									MMH Physiotherapy	2	Occupational Therapy		Fully Functional	Normal		Biomedical	1	Other				
 200	Oven	Prestige						2005-01-01					MMH Physiotherapy	2	Occupational Therapy		Fully Functional	Normal		Biomedical	1	Other				
 201	Tense Machine	Everyway Medical	N604	008170655		Private Donor							MMH Physiotherapy	2	Occupational Therapy		Fully Functional	Normal		Biomedical	1	Other				
-202	Surgical Microscope	Global Corporation	M793-220	M704WL230-1003		Private Donor		2012-01-01					MMH ENT	1	Minor OT		Fully Functional	Normal	"Donor: Dr Drysdale, a.drysdale2@gmail.com"	Biomedical	1	Other				
+202	Surgical Microscope	Global Corporation	M793-220	M704WL230-1003		Private Donor		2012-01-01					MMH ENT	1	Minor OT		Fully Functional	Normal	Donor: Dr Drysdale, a.drysdale2@gmail.com	Biomedical	1	Other				
 203	Oven	Remi				Impact East Africa							MMH ENT	1	Minor OT		Fully Functional	Normal		Biomedical	1	Other				
 204	Operating Table	Axiom	D-68642 Hustak			Impact East Africa							MMH ENT	1	Minor OT		Fully Functional	Normal		Biomedical	1	Other				
 205	Examination Lamp	Dr Mach	Mach 115	1151125000		Impact East Africa							MMH ENT	1	Minor OT		Fully Functional	Normal		Biomedical	1	Other				
@@ -247,11 +247,11 @@
 247	Suction Machine	Fazzini	f170	0-70780		MOH							MMH ICU	2	ICU		Fully Functional	Very Low	foot operated - user does not enjoy it	Biomedical	1	Other				
 248	Refrigerator	Super General	SG-R210			Bombay Bazaar							MMH ICU	2	ICU		Fully Functional	Normal		Biomedical	1	Other				
 249	Oxygen Concentrator	Airset	new life elite	951992		MOH							MMH ICU	2	ICU		Not Functional	No Utilization		Biomedical	1	Other				
-250	Pulse Oximeter	Nelcor	n180	20064657									MMH ICU	2	ICU		Not Functional	No Utilization	"new bedside monitors used instead, battery failed"	Biomedical	1	Other				
+250	Pulse Oximeter	Nelcor	n180	20064657									MMH ICU	2	ICU		Not Functional	No Utilization	new bedside monitors used instead, battery failed	Biomedical	1	Other				
 251	Oxygen Concentrator	Zhejiang Longfei Industry	lf-h-10a	0-7090181									MMH ICU	2	ICU		Needs Major Repair	No Utilization	runs for 15 min before switching off; minor repair in aug 2012; runs continuously but makes loud noise	Biomedical	1	Other				
 252	ECG Triscope	S&W	8021	8210569		MOH							MMH ICU	2	ICU		Not Functional	No Utilization		Biomedical	1	Other				
 253	Pulse Oximeter	Nelcor	n-200	0-57704a0389									MMH ICU	2	ICU		Fully Functional	Very Low	Brought to other departments for use	Biomedical	1	Other				
-254	Pulse Oximeter	Nelcor	n180	20213345									MMH ICU	2	ICU		Fully Functional	No Utilization	"new bedside monitors used instead, battery failed"	Biomedical	1	Other				
+254	Pulse Oximeter	Nelcor	n180	20213345									MMH ICU	2	ICU		Fully Functional	No Utilization	new bedside monitors used instead, battery failed	Biomedical	1	Other				
 255	Nasal CPAP System	Medtronic Sullivan	apd2	0-015									MMH ICU	2	ICU		Not Functional	Very Low		Biomedical	1	Other				
 256	Vital Signs Monitor	Omeda	3800	6050-0003-731									MMH ICU	2	ICU		Not Functional	No Utilization		Biomedical	1	Other				
 257	Defibrillator	Physio-Control Corporation	Lifepak 9	0010043									MMH ICU	2	ICU		Fully Functional	Normal		Biomedical	1	Other				
@@ -263,12 +263,12 @@
 263	Suction Machine	Jahaf	YB.DX23D			Impact East Africa							MMH ENT	2	Sea View Theatre		Fully Functional	Normal		Biomedical	1	Other				
 264	Vital Signs Monitor	Nihon Kohden	PVM-2701	0103092		MOH		05/12			1 year		MMH ICU	2	ICU		Fully Functional	Normal		Biomedical	1	Other				
 265	Blood Pressure Machine (Manual)	Reister	big ben round			MOH		05/12			1 year		MMH ICU	2	ICU		Fully Functional	Normal		Biomedical	1	Other				
-266	"Ventilator, Vital Signs Monitor"	Siare Engineering International Group	RM3000TFT	SM0000FQ		MOH		05/12			1 year		MMH ICU	2	ICU		Fully Functional	Normal		Biomedical	1	Other				
+266	Ventilator, Vital Signs Monitor	Siare Engineering International Group	RM3000TFT	SM0000FQ		MOH		05/12			1 year		MMH ICU	2	ICU		Fully Functional	Normal		Biomedical	1	Other				
 267	Vital Signs Monitor	Nihon Kohden	PVM-2701	0103108		MOH		05/12			1 year		MMH ICU	2	ICU		Fully Functional	Normal		Biomedical	1	Other				
 268	Blood Pressure Machine (Manual)	Reister	big ben round			MOH		05/12			1 year		MMH ICU	2	ICU		Fully Functional	Normal		Biomedical	1	Other				
 269	Infusion Pump	Atom	P-600	C60601-1-2:1993		MOH		05/12			1 year		MMH ICU	2	ICU		Fully Functional	Normal		Biomedical	1	Other				
 270	Infusion Pump	SK	6K6001B	11120220		MOH		05/12			1 year		MMH ICU	2	ICU		Fully Functional	Normal		Biomedical	1	Other				
-271	"Ventilator, Vital Signs Monitor"	Siare Engineering International Group	Siaetron 3000	0003FQ		MOH					1 year		MMH ICU	2	ICU		Fully Functional	Normal		Biomedical	1	Other				
+271	Ventilator, Vital Signs Monitor	Siare Engineering International Group	Siaetron 3000	0003FQ		MOH					1 year		MMH ICU	2	ICU		Fully Functional	Normal		Biomedical	1	Other				
 272	Defibrillator	Physio-Control Corporation	Lifepak 9	00004111							1 year		MMH ICU	2	ICU		Fully Functional	Normal		Biomedical	1	Other				
 273	Vital Signs Monitor	Nihon Kohden	PVM-2701	0103094	2012	MOH		05/2012			1 year		MMH ICU	2	ICU		Fully Functional	Normal		Biomedical	1	Other				
 274	Suction Machine	Gima	TobiClinic	2083		MOH		2007-01-01					MMH ICU	2	ICU		Fully Functional	Normal		Biomedical	1	Other				
@@ -278,7 +278,7 @@
 278	Blood Gas Machine	Medica	Easy Blood Gas	0312030001		MOH		05/12			1 year		MMH ICU	2	ICU		Fully Functional	Normal		Biomedical	1	Other				
 279	ECG Monitor	Nihon Kohden	CardiofaxV ECG-1550K			MOH		2012-01-01			1 year		MMH ICU	2	ICU		Fully Functional	Normal		Biomedical	1	Other				
 280	Blood Pressure Machine (Manual)	Conduren				MOH		2010-01-01					MMH Pediatric	2	Cot Ward B		Not Functional	No Utilization		Biomedical	1	Other				
-281	Oven	Titanox	"A3-214-535, Via Canove n.2/a"			MOH		2010-01-01					MMH Pediatric	2	Cot Ward B		Fully Functional	Normal		Biomedical	1	Other				
+281	Oven	Titanox	A3-214-535, Via Canove n.2/a			MOH		2010-01-01					MMH Pediatric	2	Cot Ward B		Fully Functional	Normal		Biomedical	1	Other				
 282	X-Ray Film Holder	Phillips	Bucky Diagnost 984850029301	2307				2010-01-01					MMH X-Ray	2	X-Ray Department		Fully Functional	Normal		Biomedical	1	Other				
 283	X-Ray Automatic Developer	Protec Medical Systems	Optimax 2010 1160-1-0000	116010-0812-3651									MMH X-Ray	2	X-Ray Department		Fully Functional	Normal		Biomedical	1	Other				
 284	X-Ray Light Box	Kodak	cold light illuminators										MMH X-Ray	2	X-Ray Department		Needs Minor Repair	Normal	3 out of 6 screens working	Biomedical	1	Other				
@@ -297,23 +297,23 @@
 297	Oven	Titanox											MMH Dental	2	Main Building Dental Clinic		Needs Minor Repair	No Utilization		Biomedical	1	Other				
 298	Oven	Titanox	A3-214-535										MMH Dental	2	Main Building Dental Clinic		Needs Minor Repair	Normal		Biomedical	1	Other				
 299	Dental Unit	Axiom	yzx	003005		MOH	Lab Equip	2010-01-01					MMH Dental	2	Main Building Dental Clinic		Needs Minor Repair	Normal	Head rest broken	Biomedical	1	Other				
-300	Dental Unit	Axiom	yzx	0-25701		MOH	Lab Equip	2010-01-01					MMH Dental	2	Main Building Dental Clinic		Needs Major Repair	Normal	"Light bulb is not working, water jet not working, chair position cannot be adjusted"	Biomedical	1	Other				
+300	Dental Unit	Axiom	yzx	0-25701		MOH	Lab Equip	2010-01-01					MMH Dental	2	Main Building Dental Clinic		Needs Major Repair	Normal	Light bulb is not working, water jet not working, chair position cannot be adjusted	Biomedical	1	Other				
 301	Examination Lamp	Heraeus		2280				2005-01-01					MMH Dental	2	Main Building Dental Clinic		Fully Functional	Normal		Biomedical	1	Other				
 302	Autoclave	Triumph Industrial	tr50n			Government of Egypt		2008-01-01					MMH Dental	2	Main Building Dental Clinic		Not Functional	No Utilization		Biomedical	1	Other				
 303	Oven	Aeshulap	1911	196795									MMH Dental	2	Main Building Dental Clinic		Not Functional	No Utilization		Biomedical	1	Other				
 304	Dental X-Ray machine	Planmeca	oy-00880	ithc77926		Lab Equip		2010-01-01					MMH Dental	2	Main Building Dental Clinic		Not Functional	No Utilization		Biomedical	1	Other				
 305	Oxygen Concentrator	Ever Flo	102006	0072388		Haukeland University		2011-01-01					MMH Neonatal	1	Neonatal Unit		Fully Functional	Normal		Biomedical	1	Other				
-306	Infant Incubator	Axiom	yp-90a	0-6070104033	2007			2010-01-01					MMH Neonatal	1	Neonatal Unit		Needs Major Repair	Normal	"Does not heat up, just used for storing neonates"	Biomedical	1	Other				
-307	Infant Incubator	Axiom	yp-90a	0-6070104014	2007			2010-01-01					MMH Neonatal	1	Neonatal Unit		Needs Major Repair	Normal	"Does not heat up, just used for storing neonates"	Biomedical	1	Other				
+306	Infant Incubator	Axiom	yp-90a	0-6070104033	2007			2010-01-01					MMH Neonatal	1	Neonatal Unit		Needs Major Repair	Normal	Does not heat up, just used for storing neonates	Biomedical	1	Other				
+307	Infant Incubator	Axiom	yp-90a	0-6070104014	2007			2010-01-01					MMH Neonatal	1	Neonatal Unit		Needs Major Repair	Normal	Does not heat up, just used for storing neonates	Biomedical	1	Other				
 308	Infant Basin												MMH Neonatal	1	Neonatal Unit		Fully Functional	Normal		Biomedical	1	Other				
 309	Suction Machine	New Aska 30	0706CAOS			Haukeland University		2012-01-01					MMH Neonatal	1	Neonatal Unit		Fully Functional	Normal		Biomedical	1	Other				
-310	Infant Incubator	"Hill Rom Air Shields, Drager"	c2vha-1 isolette c2000	PN-2436		Haukeland University		2012-01-01					MMH Neonatal	1	Neonatal Unit		Fully Functional	Normal		Biomedical	1	Other				
+310	Infant Incubator	Hill Rom Air Shields, Drager	c2vha-1 isolette c2000	PN-2436		Haukeland University		2012-01-01					MMH Neonatal	1	Neonatal Unit		Fully Functional	Normal		Biomedical	1	Other				
 311	Oxygen Concentrator	Ever Flo	102006	0072363		Haukeland University		2012-01-01					MMH Neonatal	1	Neonatal Unit		Fully Functional	Normal		Biomedical	1	Other				
 312	Infant Basin												MMH Neonatal	1	Neonatal Unit		Fully Functional	Normal		Biomedical	1	Other				
-313	Infant Incubator	"Hill Rom Air Shields, Drager"	c2vha-1 isolette c2000	uv01962		Haukeland University		2011-01-01					MMH Neonatal	1	Neonatal Unit		Not Functional	No Utilization		Biomedical	1	Other				
-314	Infant Incubator	"Hill Rom Air Shields, Drager"	c2vha-1 isolette c2000	UV01961		Haukeland University		2011-01-01					MMH Neonatal	1	Neonatal Unit		Fully Functional	Normal		Biomedical	1	Other				
+313	Infant Incubator	Hill Rom Air Shields, Drager	c2vha-1 isolette c2000	uv01962		Haukeland University		2011-01-01					MMH Neonatal	1	Neonatal Unit		Not Functional	No Utilization		Biomedical	1	Other				
+314	Infant Incubator	Hill Rom Air Shields, Drager	c2vha-1 isolette c2000	UV01961		Haukeland University		2011-01-01					MMH Neonatal	1	Neonatal Unit		Fully Functional	Normal		Biomedical	1	Other				
 315	Infant Incubator	Axiom	xp-90a	0-6070104009	2007			2010-01-01					MMH Neonatalogy	1	Neonatal Unit		Not Functional	No Utilization		Biomedical	1	Other				
-316	Pulse Oximeter	Masimo	set rad-8			Haukeland University		2011-01-01					MMH Neonatalogy	1	Neonatal Unit		Needs Minor Repair	Normal	"Switches off sometimes, needs reboot"	Biomedical	1	Other				
+316	Pulse Oximeter	Masimo	set rad-8			Haukeland University		2011-01-01					MMH Neonatalogy	1	Neonatal Unit		Needs Minor Repair	Normal	Switches off sometimes, needs reboot	Biomedical	1	Other				
 317	Infant Incubator	Axiom	yp-90a	0-6070104008	2007			2010-01-01					MMH Neonatalogy	1	Neonatal Unit		Not Functional	Normal		Biomedical	1	Other				
 318	Oxygen Concentrator	Ever Flo	1020006	0072376		Haukeland University		2012-01-01					MMH Neonatal	1	Neonatal Unit		Fully Functional	Normal		Biomedical	1	Other				
 319	Oxygen Concentrator	Ever Flo	1020006	0072377		Haukeland University		2011-01-01					MMH Neonatal	1	Neonatal Unit		Fully Functional	Normal		Biomedical	1	Other				
@@ -343,27 +343,27 @@
 343	Blood Pressure Machine (Manual)	Reister	big ben round			MOH		2009-01-01					MMH OR	3	OT1		Fully Functional	Normal		Biomedical	1	Other				
 344	Suction Machine	Hersill	D7MX	20542-16-031	2009	MOH		2012-01-01					MMH OR	3	OT1		Fully Functional	Normal		Biomedical	1	Other				
 345	Anesthesia Machine	Aeonmed	Aeon7500A	AEON7500A(E)ZKY2023		MOH		2009-01-01					MMH OR	3	OT1		Fully Functional	Normal		Biomedical	1	Other				
-346	Operating Lamp	Original Hunau Quarzlampen	3500	67042									MMH OR	3	OT1		Needs Major Repair	Normal	"Lamp does not stabilize- medchanical fault, needs to be propped for use"	Biomedical	1	Other				
+346	Operating Lamp	Original Hunau Quarzlampen	3500	67042									MMH OR	3	OT1		Needs Major Repair	Normal	Lamp does not stabilize- medchanical fault, needs to be propped for use	Biomedical	1	Other				
 347	Pulse Oximeter	Masimo	Masimo Set RAD-5	537579	2007	Haukeland University		2009-01-01					MMH OR	3	OT1		Fully Functional	Normal		Biomedical	1	Other				
 348	Pulse Oximeter	Acare	AH-M1	M017A000117		MOH		2009-01-01					MMH OR	3	OT1		Fully Functional	Normal		Biomedical	1	Other				
-349	Suction Machine	Gima	310356/03	2067	2010	MOH	Anudha	2010-01-01				Anudha	MMH OR	3	OT1		Fully Functional	Normal	"Low vacuum, inconsistent functioning, sent to HCEU repeatedly, Annudha: +255222122745/7"	Biomedical	1	Other				
+349	Suction Machine	Gima	310356/03	2067	2010	MOH	Anudha	2010-01-01				Anudha	MMH OR	3	OT1		Fully Functional	Normal	Low vacuum, inconsistent functioning, sent to HCEU repeatedly, Annudha: +255222122745/7	Biomedical	1	Other				
 350	X-Ray Light Box	Planilux	LJ-S	108400/201004									MMH OR	3	OT1		Fully Functional	Normal		Biomedical	1	Other				
 351	Diathermy Machine	Hutong	GD350-P	3250683	2009			2009-01-01					MMH OR	3	OT1		Fully Functional	Normal		Biomedical	1	Other				
 352	Suction Machine	Jhali	LX-3	HI2046	2010			2009-01-01					MMH OR	3	OT2		Fully Functional	Normal		Biomedical	1	Other				
-353	Surgical Microscope	Carl Zeiss	"Opmics, KBC/KBD002"	CMKBE003				2012-01-01					MMH OR	3	OT2		Fully Functional	Normal		Biomedical	1	Other				
+353	Surgical Microscope	Carl Zeiss	Opmics, KBC/KBD002	CMKBE003				2012-01-01					MMH OR	3	OT2		Fully Functional	Normal		Biomedical	1	Other				
 354	X-Ray Machine (Portable)	Ecoray	eco-22-gen-cx9	cx9g-1002001		MOH	Lab Equip	2009-01-01				Lab Equip	MMH OR	3	OT3		Needs Minor Repair	Normal	mechanical failure for wheels. Lab Equip came once during warranty period. Second time of breakage was after warranty	Biomedical	1	Other				
 355	Digital Display Screen for Portable X-Ray	Ecoray	ECO-MCART-CX9	CX9MCART-7002001		MOH		2009-01-01					MMH OR	3	OT3		Fully Functional	Normal		Biomedical	1	Other				
-356	X-Ray Light Box	Geratebau F. Schulte	"IRIS, 23085"					2009-01-01					MMH OR	3	OT3		Fully Functional	Normal		Biomedical	1	Other				
+356	X-Ray Light Box	Geratebau F. Schulte	IRIS, 23085					2009-01-01					MMH OR	3	OT3		Fully Functional	Normal		Biomedical	1	Other				
 357	X-Ray Light Box	Geratebau F. Schulte	23085	LKS7				2009-01-01					MMH OR	3	OT3		Fully Functional	Normal		Biomedical	1	Other				
-358	Defibrillator	Physiocontrol	lifepak 9b	000-10928				2002-01-01					MMH OR	3	OT3		Needs Major Repair	No Utilization	"EKG functioning, defibs not"	Biomedical	1	Other				
+358	Defibrillator	Physiocontrol	lifepak 9b	000-10928				2002-01-01					MMH OR	3	OT3		Needs Major Repair	No Utilization	EKG functioning, defibs not	Biomedical	1	Other				
 359	Diathermy Machine	Birtcher Medical Systems	BMS4400 Powerplus	10954007				2011-01-01					MMH OR	3	OT3		Fully Functional	Normal		Biomedical	1	Other				
-360	Operating Lamp 	Hanaulu											MMH OR	3	OT3		Needs Major Repair	Normal	"Lamp does not stabilize- medchanical fault, needs to be propped for use"	Biomedical	1	Other				
+360	Operating Lamp 	Hanaulu											MMH OR	3	OT3		Needs Major Repair	Normal	Lamp does not stabilize- medchanical fault, needs to be propped for use	Biomedical	1	Other				
 361	Operating Table	Axiom	AX-3008H			MOH	Lab Equip	2009-01-01					MMH OR	3	OT3		Fully Functional	Normal		Biomedical	1	Other				
 362	Suction Machine	Fazzini	SR1	030014		MOH		1997-01-01					MMH OR	3	OT3		Fully Functional	Normal		Biomedical	1	Other				
 363	Suction Machine	Gima		2074			Anudha						MMH Maternity	1	Maternity Theater		Needs Major Repair	Normal	Fan is broken	Biomedical	1	Other				
-364	Operating Table	St Francis Medical Equipment	ot-125a	t125a0683		MOH							MMH Maternity	1	Maternity Theater		Needs Minor Repair	Very High	"Sometimes doesn't go up and down, stiff pedal"	Biomedical	1	Other				
+364	Operating Table	St Francis Medical Equipment	ot-125a	t125a0683		MOH							MMH Maternity	1	Maternity Theater		Needs Minor Repair	Very High	Sometimes doesn't go up and down, stiff pedal	Biomedical	1	Other				
 365	Blood Pressure Machine (Manual)	Reister	big ben round										MMH Maternity	1	Maternity Theater		Not Functional	No Utilization	Gives incorrect measurements	Biomedical	1	Other				
-366	Vital Signs Monitor	Critikon	amamap 8u5xt										MMH Maternity	1	Maternity Theater		Not Functional	No Utilization	"Measurements for heart rate, arterial pressure, systolic and diastolic are incorrect"	Biomedical	1	Other				
+366	Vital Signs Monitor	Critikon	amamap 8u5xt										MMH Maternity	1	Maternity Theater		Not Functional	No Utilization	Measurements for heart rate, arterial pressure, systolic and diastolic are incorrect	Biomedical	1	Other				
 367	Suction Machine	Gima		2107			Anudha						MMH Maternity	1	Maternity Theater		Not Functional	No Utilization		Biomedical	1	Other				
 368	Anesthesia Machine	Advanced Medical Services	AMS100										MMH OR	3	OT3		Fully Functional	Normal		Biomedical	1	Other				
 369	Operating Lamp	Original Hanaulux	66858										MMH Maternity	1	Maternity Theater		Fully Functional	Normal		Biomedical	1	Other				
@@ -378,7 +378,7 @@
 378	Resuscitation Table with Heating Lamp	mms	multiradia 30	00-403									MMH Maternity	1	Delivery Room		Needs Major Repair	Normal	Heating lamp not working	Biomedical	1	Other				
 379	Suction Machine	Medela	vario 18	1329769									MMH Maternity	1	Delivery Room		Needs Minor Repair	Normal	Vacuum strength not high enough	Biomedical	1	Other				
 380	Suction Machine	Cami	new askir 30	11031									MMH Maternity	1	Delivery Room		Needs Minor Repair	Normal	Vacuum strength not high enough	Biomedical	1	Other				
-381	Suction Machine	Dameca											MMH Maternity	1	Delivery Room		Not Functional	No Utilization	"Missing motor, incomplete set"	Biomedical	1	Other				
+381	Suction Machine	Dameca											MMH Maternity	1	Delivery Room		Not Functional	No Utilization	Missing motor, incomplete set	Biomedical	1	Other				
 382	Patient Trolley	Stryker	er24			Chara							MMH Maternity	1	Maternity Corridor		Fully Functional	No Utilization		Biomedical	1	Other				
 383	Blood Pressure Machine (Manual)	Reister	big ben round			MOH							MMH TB Ward	1	Staff Room		Fully Functional	Normal		Biomedical	1	Other				
 384	Weighing Scale	Target	TA-8859			MOH							MMH TB Ward	1	Staff Room		Fully Functional	Normal		Biomedical	1	Other				
@@ -389,19 +389,19 @@
 389	Blood Pressure Machine (Manual)	Reister		110105244		MOH		2012-01-01					MMH Female Surgical Gynecological Ward	4	Main Corridor		Fully Functional	Normal		Biomedical	1	Other				
 390	Oven	Titanox				MOH							MMH Female Surgical Gynecological Ward	4	MMH Female Surgical Gynecological ward		Fully Functional	Normal		Biomedical	1	Other				
 391	Delivery Table												MMH Female Surgical Gynecological Ward	4	Maternity Evacuation Room		Fully Functional	Normal		Biomedical	1	Other				
-392	Delivery Bed	Famed Zywier											MMH Female Surgical Gynecological Ward	4	Maternity Evacuation Room		Needs Major Repair	Very Low	"Electronic controls not working, used when 2 evacuation procedures are needed"	Biomedical	1	Other				
+392	Delivery Bed	Famed Zywier											MMH Female Surgical Gynecological Ward	4	Maternity Evacuation Room		Needs Major Repair	Very Low	Electronic controls not working, used when 2 evacuation procedures are needed	Biomedical	1	Other				
 393	Autoclave	Binder											MMH Gynecological Ward	4	Female Gynecological Ward		Needs Minor Repair	Normal		Biomedical	1	Other				
-394	Exam Bed (maternity)												MMH Female Surgical Gynecological Ward	4	"Doctor's Office, Female Surgical Ward Gynecology"		Fully Functional	Normal		Biomedical	1	Other				
+394	Exam Bed (maternity)												MMH Female Surgical Gynecological Ward	4	Doctor's Office, Female Surgical Ward Gynecology		Fully Functional	Normal		Biomedical	1	Other				
 395	Blood Pressure Machine (Manual)	Welch Allyn				MOH		2012-01-01					MMH Female Medical Ward	4	Female Medical Ward		Needs Minor Repair	Normal	Works sometimes	Biomedical	1	Other				
 396	Nebulizer	Omron Healthcare	Omron NE-CO8	80306		MOH							MMH Female Medical Ward	4	Female Medical Ward		Fully Functional	Normal		Biomedical	1	Other				
 397	Blood Pressure Machine (Manual) 	Reister	big ben round			MOH		2012-01-01					MMH Hypertension Clinic	1	Hypertension clinic		Fully Functional	Normal		Biomedical	1	Other				
-398	Blood Pressure Machine (Manual)	Reister	big ben round			MOH	MSD	2011-01-01					MMH Hypertension Clinic	1	Hypertension clinic		Needs Minor Repair	Very Low	"Hard to use, stiff"	Biomedical	1	Other				
+398	Blood Pressure Machine (Manual)	Reister	big ben round			MOH	MSD	2011-01-01					MMH Hypertension Clinic	1	Hypertension clinic		Needs Minor Repair	Very Low	Hard to use, stiff	Biomedical	1	Other				
 399	Blood Pressure Machine (Manual)	Reister	big ben round			MOH	MSD	2010-01-01					MMH Hypertension Clinic	1	Hypertension clinic		Needs Minor Repair	No Utilization		Biomedical	1	Other				
 400	Blood Pressure Machine (Manual)	Reister	nova-presameter	110100630		MOH	MSD	2010-01-01					MMH Hypertension Clinic	1	Hypertension clinic		Not Functional	No Utilization		Biomedical	1	Other				
 401	Height and Weight Scale	soehnle	Soehnle Professional	2755		Novel		2006-01-01					MMH Hypertension Clinic	1	Hypertension clinic		Fully Functional	Normal		Biomedical	1	Other				
 402	Blood Pressure Machine (Manual)	Reister	big ben round			MOH	MSD	2010-01-01					MMH Hypertension Clinic	1	Hypertension clinic		Needs Minor Repair	No Utilization		Biomedical	1	Other				
-403	Blood Pressure Machine (Manual)	Reister	big ben round			MOH	MSD	2010-01-01					MMH Hypertension Clinic	1	Hypertension clinic		Needs Minor Repair	No Utilization	"Hard to use, stiff"	Biomedical	1	Other				
-404	Weighing Scale					MOH	MSD	2012-01-01					MMH Diabetic Clinic	1	Diabetic Clinic		Fully Functional	Normal	"Hard to use, stiff"	Biomedical	1	Other				
+403	Blood Pressure Machine (Manual)	Reister	big ben round			MOH	MSD	2010-01-01					MMH Hypertension Clinic	1	Hypertension clinic		Needs Minor Repair	No Utilization	Hard to use, stiff	Biomedical	1	Other				
+404	Weighing Scale					MOH	MSD	2012-01-01					MMH Diabetic Clinic	1	Diabetic Clinic		Fully Functional	Normal	Hard to use, stiff	Biomedical	1	Other				
 405	Blood Pressure Machine (Manual) 	Reister	big ben round			MOH	MSD	2010-01-01					MMH Diabetic Clinic	1	Diabetic Clinic		Fully Functional	Normal		Biomedical	1	Other				
 406	Blood Pressure Machine (Manual)	Reister	big ben round			MOH	MSD	2010-01-01					MMH Diabetic Clinic	1	Diabetic Clinic		Not Functional	No Utilization		Biomedical	1	Other				
 407	Blood Pressure Machine (Manual)	KC											MMH Diabetic Clinic	1	Diabetic Clinic		Not Functional	No Utilization		Biomedical	1	Other				
@@ -417,7 +417,7 @@
 417	Refrigerator	Helkama				Finnish Diabetic Association		1990-01-01					MMH Diabetic Clinic	1	Diabetic Clinic		Fully Functional	Normal		Biomedical	1	Other				
 418	Anesthesia Machine	AMS	AMS 100	a10412106		MOH		2004-01-01					MMH OR	3	OT4		Needs Major Repair	Normal		Biomedical	1	Other				
 419	Anesthesia Machine	Temel	unidad respiratoria	0-1-2048				2009-01-01					MMH OR	3	OT4		Needs Major Repair	Normal	CO2 Absorber switch not working well	Biomedical	1	Other				
-420	Anesthesia Machine	Temel	ergotronic-3	a518-a		Ned Foundation		2009-01-01					MMH OR	3	OT4		Not Functional	No Utilization	"Works on and off, piping to oxygen tank does not connect"	Biomedical	1	Other				
+420	Anesthesia Machine	Temel	ergotronic-3	a518-a		Ned Foundation		2009-01-01					MMH OR	3	OT4		Not Functional	No Utilization	Works on and off, piping to oxygen tank does not connect	Biomedical	1	Other				
 421	Operating Table	Amsco	Surgical 2080	RB122585-002									MMH OR	3	OT4		Fully Functional	Normal	Wrong vaporizer? Piping to oxygen does not connect	Biomedical	1	Other				
 422	Operating Lamp	Hanaulux											MMH OR	4	OT4		Fully Functional	Normal		Biomedical	1	Other				
 423	Blood Pressure Machine (Manual) 	Reister	big ben round										MMH OR	4	OT4		Fully Functional	Normal		Biomedical	1	Other				
@@ -493,9 +493,9 @@
 493	X-Ray Light Box	Planilux			2010	MOH							MMH CT Scan	1	Operator's Room		Fully Functional	Normal		Biomedical	1	Other				
 494	X-Ray Light Box				2010	MOH							MMH CT Scan	1	Operator's Room		Fully Functional	Normal		Biomedical	1	Other				
 495	Laryngoscope					MOH							MMH Maternity	1	Antenatal Staff Room		Needs Minor Repair	Normal		Biomedical	1	Other				
-496	Laryngoscope					MOH							MMH Maternity	1	Antenatal Staff Room		Needs Minor Repair	Normal	"No batteries, bust still works for intubation. Flashlight function does not work. Needs 2 AA Batteries"	Biomedical	1	Other				
-497	Laryngoscope					MOH							MMH Maternity	1	Antenatal Staff Room		Needs Minor Repair	Normal	"No batteries, bust still works for intubation. Flashlight function does not work. Needs 2 AA Batteries"	Biomedical	1	Other				
-498	Autoclave	Titanox			2011	Private donor		2011-01-01					MMH Maternity	1	Antenatal Staff Room		Fully Functional	No Utilization	"No batteries, bust still works for intubation. Flashlight function does not work. Needs 2 AA Batteries"	Biomedical	1	Other				
+496	Laryngoscope					MOH							MMH Maternity	1	Antenatal Staff Room		Needs Minor Repair	Normal	No batteries, bust still works for intubation. Flashlight function does not work. Needs 2 AA Batteries	Biomedical	1	Other				
+497	Laryngoscope					MOH							MMH Maternity	1	Antenatal Staff Room		Needs Minor Repair	Normal	No batteries, bust still works for intubation. Flashlight function does not work. Needs 2 AA Batteries	Biomedical	1	Other				
+498	Autoclave	Titanox			2011	Private donor		2011-01-01					MMH Maternity	1	Antenatal Staff Room		Fully Functional	No Utilization	No batteries, bust still works for intubation. Flashlight function does not work. Needs 2 AA Batteries	Biomedical	1	Other				
 499	Autoclave	Scholtes			2011	Private donor		2011-01-01					MMH Maternity	1	Antenatal Staff Room		Fully Functional	No Utilization	Autoclave in maternity main corridor is used instead. 1 is enough for each department.	Biomedical	1	Other				
 500	Defibrillator	Hewlett Packard		2825a57208		MOH							MMH Maternity	1	Antenatal Staff Room		Not Functional	No Utilization	Autoclave in maternity main corridor is used instead. 1 is enough for each department.	Biomedical	1	Other				
 501	Blood Pressure Machine (Manual)	Welch Allyn		1108095406		MOH		2012-01-01					MMH Maternity	1	Sister's Room		Fully Functional	No Utilization		Biomedical	1	Other				

@@ -1,9 +1,9 @@
-001	"Freezer, ultra low"	Revco	ULT2090/5/V31	523M/583515/TM				2002-01-01					PHL	1	Media preparation	PHL	Fully Functional	Normal		Biomedical	1	Other		
-002	"Freezer, ultra low"	Revco	ULT2090/5/V31	523M/583516/TM				2002-01-01					PHL	1	Media preparation	PHL	Fully Functional	Normal		Biomedical	1	Other		
-003	"Freezer, ultra low"	Whirlpool	CF60	1132041367				2002-01-01					PHL	1	Media preparation	PHL	Needs Minor Repair	Normal	gas down	Biomedical	1	Other		
+001	Freezer, ultra low	Revco	ULT2090/5/V31	523M/583515/TM				2002-01-01					PHL	1	Media preparation	PHL	Fully Functional	Normal		Biomedical	1	Other		
+002	Freezer, ultra low	Revco	ULT2090/5/V31	523M/583516/TM				2002-01-01					PHL	1	Media preparation	PHL	Fully Functional	Normal		Biomedical	1	Other		
+003	Freezer, ultra low	Whirlpool	CF60	1132041367				2002-01-01					PHL	1	Media preparation	PHL	Needs Minor Repair	Normal	gas down	Biomedical	1	Other		
 004	Refrigerator	Daewoo	FR/142										PHL	1	Media preparation	PHL	Fully Functional	Normal		Biomedical	1	Other		
 005	Refrigerator	Hitachi											PHL	1	Media preparation	PHL	Fully Functional	Normal		Biomedical	1	Other		
-006	"Freezer, ultra low"	Tropical											PHL	1	Media preparation	PHL	Fully Functional	Normal		Biomedical	1	Other		
+006	Freezer, ultra low	Tropical											PHL	1	Media preparation	PHL	Fully Functional	Normal		Biomedical	1	Other		
 007	Refrigerator	Electrolux International	WRTD20V4AWO	BA21203077				2003-01-01					PHL	1	Parasitology	PHL	Fully Functional	Normal		Biomedical	1	Other		
 008	Centrifuge	Beckman Coulter	Microfuge 22R	MHD07A026		PHL		2008-01-01					PHL	1	Parasitology	PHL	Not Functional	No Utilization	timer defective	Biomedical	1	Other		
 009	Centrifuge	Hermle	Z400	48020020				2003-01-01					PHL	1	Parasitology	PHL	Fully Functional	Normal		Biomedical	1	Other		
@@ -21,11 +21,11 @@
 021	Microscope	Olympus	CH/20	3D12374				2004-01-01					PHL	1	Parasitology	PHL	Fully Functional	Very High		Biomedical	1	Other		
 022	Microscope	Olympus	CH/20	3D12401				2004-01-01					PHL	1	Parasitology	PHL	Fully Functional	Very High		Biomedical	1	Other		
 023	Microscope	Olympus	CH/20	3D12400				2004-01-01					PHL	1	Parasitology	PHL	Fully Functional	Normal		Biomedical	1	Other		
-024	Microscope	Olympus	S2/ST	J72312				2003-01-01					PHL	1	Parasitology	PHL	Fully Functional	Normal	"Installed 2011, camera needs upgrade"	Biomedical	1	Other		
+024	Microscope	Olympus	S2/ST	J72312				2003-01-01					PHL	1	Parasitology	PHL	Fully Functional	Normal	Installed 2011, camera needs upgrade	Biomedical	1	Other		
 025	Microscope	Nikon	TMS	310600				2003-01-01					PHL	1	Parasitology	PHL	Fully Functional	Normal		Biomedical	1	Other		
 026	Microscope	Nikon	Eclipse 6200	841746									PHL	1	Parasitology	PHL	Fully Functional	Normal		Biomedical	1	Other		
 027	Monitor	EI20 Corporation	FlexScan SX2262W	30539041B		WHO		2011-01-01	2012-01-01				PHL	1	Parasitology	PHL	Fully Functional	Normal		Biomedical	1	Other		
-028	"Image processor, CPU"	Olympus	DP21/CB	0122500A4		WHO		2011-01-01					PHL	1	Parasitology	PHL	Fully Functional	Normal		Biomedical	1	Other		
+028	Image processor, CPU	Olympus	DP21/CB	0122500A4		WHO		2011-01-01					PHL	1	Parasitology	PHL	Fully Functional	Normal		Biomedical	1	Other		
 029	Monitor	JVC	TM/A17OG	7904143	2004								PHL	1	Parasitology	PHL	Fully Functional	Normal		Biomedical	1	Other		
 030	Centrifuge	Centurion Scientific	1040 series	98052218	1998	PHL							PHL	1	Parasitology	PHL	Fully Functional	Normal		Biomedical	1	Other		
 031	Safety Cabinet	Bioquell	Microflow 2	20020820761				2003-01-01					PHL	1	Washing and Sterilization	PHL	Needs Minor Repair	No Utilization	Needs air stabilization sensor. Part has been received but not yet installed.	Biomedical	1	Other		
@@ -33,7 +33,7 @@
 033	Incubator	Ambassador	IBP	85				2011-01-01					PHL	1	Washing and Sterilization	PHL	Fully Functional	Normal		Biomedical	1	Other		
 034	Incubator	Inter Continental Equipment		252.2004V				2005-01-01					PHL	1	Washing and Sterilization	PHL	Fully Functional	Normal		Biomedical	1	Other		
 035	Hot Air Oven	Inter Continental Equipment		95.2004				2005-01-01					PHL	1	Washing and Sterilization	PHL	Fully Functional	Normal		Biomedical	1	Other		
-036	Distiller	Barnstead	A74410	B030044									PHL	1	Washing and Sterilization	PHL	Needs Minor Repair	Normal	"Heating element defective, right de/calcifying agent a problem"	Biomedical	1	Other		
+036	Distiller	Barnstead	A74410	B030044									PHL	1	Washing and Sterilization	PHL	Needs Minor Repair	Normal	Heating element defective, right de/calcifying agent a problem	Biomedical	1	Other		
 037	Autoclave	PBI International		Z6478	2003	PHL							PHL	1	Washing and Sterilization	PHL	Fully Functional	Normal		Biomedical	1	Other		
 038	Pressure Steam Sterilizer	Wisconsin Aluminium Foundry	000055C	75X									PHL	1	Washing and Sterilization	PHL	Fully Functional	Normal		Biomedical	1	Other		
 039	Distiller	GFL	2204	10153909B									PHL	1	Washing and Sterilization	PHL	Fully Functional	No Utilization		Biomedical	1	Other		
@@ -64,12 +64,12 @@
 064	Vortex	Fisher	Vortex Genie 2										PHL	1	Bacteriology	PHL	Fully Functional	Normal		Biomedical	1	Other		
 065	Water Bath	PBI International		39587/U1A									PHL	1	Washing and Sterilization	PHL	Fully Functional	Normal		Biomedical	1	Other		
 066	Vortex	Inter Continental Equipment				PHL		2005-01-01					PHL	1	Bacteriology	PHL	Fully Functional	Normal		Biomedical	1	Other		
-067	Refrigerator	Panasonic	NR/B651B	992098005024		Johns Hopkins University		2011-01-01					PHL	1	BMGF CHXL 	PHL	Fully Functional	Normal	"New, check warranty"	Biomedical	1	Other		
-068	Stainer	Biomcrieux	Previ	29551111905		Johns Hopkins University		2012-01-01					PHL	1	BMGF CHXL 	PHL	Fully Functional	Normal	"New, check warranty"	Biomedical	1	Other		
-069	Microbial Analyzer	Biomerieux	VITEK 2 Compact	VK2C9/156		Johns Hopkins University		2011-01-01					PHL	1	BMGF CHXL 	PHL	Fully Functional	Normal	"New, check warranty"	Biomedical	1	Other		
-070	Microbial Analyzer	Biomerieux	VITEK 2 Compact	VK2C1D445		Johns Hopkins University		2012-01-01					PHL	1	BMGF CHXL 	PHL	Fully Functional	Normal	"New, check warranty"	Biomedical	1	Other		
-071	Media Dispenser	AES Chemunex	APS One	12144422		Johns Hopkins University		2012-01-01					PHL	1	BMGF CHXL 	PHL	Fully Functional	Normal	"New, check warranty"	Biomedical	1	Other		
-072	"Cu,ture Media Preparator"	AES Chemunex	Masterclave 09	13546537		Johns Hopkins University		2012-01-01					PHL	1	BMGF CHXL 	PHL	Fully Functional	Normal	"New, check warranty"	Biomedical	1	Other		
+067	Refrigerator	Panasonic	NR/B651B	992098005024		Johns Hopkins University		2011-01-01					PHL	1	BMGF CHXL 	PHL	Fully Functional	Normal	New, check warranty	Biomedical	1	Other		
+068	Stainer	Biomcrieux	Previ	29551111905		Johns Hopkins University		2012-01-01					PHL	1	BMGF CHXL 	PHL	Fully Functional	Normal	New, check warranty	Biomedical	1	Other		
+069	Microbial Analyzer	Biomerieux	VITEK 2 Compact	VK2C9/156		Johns Hopkins University		2011-01-01					PHL	1	BMGF CHXL 	PHL	Fully Functional	Normal	New, check warranty	Biomedical	1	Other		
+070	Microbial Analyzer	Biomerieux	VITEK 2 Compact	VK2C1D445		Johns Hopkins University		2012-01-01					PHL	1	BMGF CHXL 	PHL	Fully Functional	Normal	New, check warranty	Biomedical	1	Other		
+071	Media Dispenser	AES Chemunex	APS One	12144422		Johns Hopkins University		2012-01-01					PHL	1	BMGF CHXL 	PHL	Fully Functional	Normal	New, check warranty	Biomedical	1	Other		
+072	Cu,ture Media Preparator	AES Chemunex	Masterclave 09	13546537		Johns Hopkins University		2012-01-01					PHL	1	BMGF CHXL 	PHL	Fully Functional	Normal	New, check warranty	Biomedical	1	Other		
 073	Incubator	Odontobras	ECB 1.1 Digital	60203003		PHL		2004-01-01					PHL	1	BMGF CHXL 	PHL	Fully Functional	Normal		Biomedical	1	Other		
 074	Water Bath	B.Braun Biotech International	Thermomix BM/E	10016231		PHL		2001-01-01					PHL	1	BMGF CHXL 	PHL	Fully Functional	Normal		Biomedical	1	Other		
 075	Microscope	Magnus	CX/Bi			Johns Hopkins University		2011-01-01					PHL	1	BMGF CHXL 	PHL	Fully Functional	Normal		Biomedical	1	Other		
@@ -94,7 +94,7 @@
 094	Safety Cabinet	Envair	Bio2+	BS57261992		PHL		2002-01-01					PHL	1	Virology	PHL	Fully Functional	Normal		Biomedical	1	Other		
 095	Refrigerator	Hitachi	R/2320AUK7K	2170100258		Italian Corporation		2007-01-01					PHL	1	Virology	PHL	Fully Functional	Normal		Biomedical	1	Other		
 096	Incubator	Memmert	100/800			World Bank		2008-01-01					PHL	1	Virology	PHL	Fully Functional	Normal		Biomedical	1	Other		
-097	Distiller	GFL	2204	10125302		PHL		2004-01-01					PHL	1	Store	PHL	Not Functional	No Utilization	"cannot be fixed, kept for spare parts"	Biomedical	1	Other		
+097	Distiller	GFL	2204	10125302		PHL		2004-01-01					PHL	1	Store	PHL	Not Functional	No Utilization	cannot be fixed, kept for spare parts	Biomedical	1	Other		
 098	Spectrophotometer	Beckman Coulter	DU520	0303U2001960									PHL	1	Store	PHL	Not Functional	No Utilization		Biomedical	1	Other		
 099	Blender	Blender	L6	26936		PHL		2004-01-01					PHL	1	Store	PHL	Not Functional	No Utilization		Biomedical	1	Other		
 100	Vacuum pump	Asal	707			PHL		2004-01-01					PHL	1	Store	PHL	Not Functional	No Utilization		Biomedical	1	Other		

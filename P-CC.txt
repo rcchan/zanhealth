@@ -1,4 +1,4 @@
-001	Incubator	Binder	apt-line b28 	11-15317		ICAP		2012-01-01					Chake Chake District Hospital	1	Parasitology	Lab	Fully Functional	No Utilization	"brand new, never used but installed; Manufacturer service hotline 866-885-9794; service@binder-world.com"	Biomedical	1	Other														
+001	Incubator	Binder	apt-line b28 	11-15317		ICAP		2012-01-01					Chake Chake District Hospital	1	Parasitology	Lab	Fully Functional	No Utilization	brand new, never used but installed; Manufacturer service hotline 866-885-9794; service@binder-world.com	Biomedical	1	Other														
 002	Microscope	Human-Gmbh	humascope fluo led b/g	110024	2012-01-01	ICAP							Chake Chake District Hospital	1	Parasitology	Lab	Fully Functional	Very Low	user not trained	Biomedical	1	Other														
 003	Microscope	Olympus	cx21FS1	5390939		ZMCP						ZMCP	Chake Chake District Hospital	1	Parasitology	Lab	Fully Functional	Normal	Installed Jan 2012	Biomedical	1	Other														
 004	Hot Plate	Truman	HP-155A			Government		2012-01-01					Chake Chake District Hospital	1	Parasitology	Lab	Fully Functional	Normal	Installed Jan 2012	Biomedical	1	Other														
@@ -16,17 +16,17 @@
 016	Hemoglobin Analyzer	Hemocue A6	Hemocue Hb 201+	0824013166		ICAP							Chake Chake District Hospital	1	Phlebotomy	Lab	Fully Functional	Normal		Biomedical	1	Other														
 017	Microscope	Olympus	ch40	rf200		ZACP							Chake Chake District Hospital	1	Lab Store Room	Lab	Needs Minor Repair	No Utilization	Missing power cord; Possibly other unknown problems	Biomedical	1	Other														
 018	Centrifuge	Aic	4236	220793	1989-01-01								Chake Chake District Hospital	1	Lab Store Room	Lab	Needs Major Repair	No Utilization		Biomedical	1	Other														
-019	Glucometer	Wpa	c07000	244									Chake Chake District Hospital	1	Lab Store Room	Lab	Needs Major Repair	No Utilization	"very old, not sure if it works"	Biomedical	1	Other														
-020	Centrifuge	"Digisystem Laboratory Instruments, Inc"	dsc3005d	0-606046		ICAP		2006-01-01					Chake Chake District Hospital	1	Lab Store Room	Lab	Needs Major Repair	No Utilization		Biomedical	1	Other														
+019	Glucometer	Wpa	c07000	244									Chake Chake District Hospital	1	Lab Store Room	Lab	Needs Major Repair	No Utilization	very old, not sure if it works	Biomedical	1	Other														
+020	Centrifuge	Digisystem Laboratory Instruments, Inc	dsc3005d	0-606046		ICAP		2006-01-01					Chake Chake District Hospital	1	Lab Store Room	Lab	Needs Major Repair	No Utilization		Biomedical	1	Other														
 021	Water Bath	Axiom Gmbh	Dk-420	L-612822		PHL							Chake Chake District Hospital	1	Blood Transfusion	Lab	Fully Functional	Normal		Biomedical	1	Other														
 022	Microscope	Olympus	cx21FS1	SF91089		SMPC							Chake Chake District Hospital	1	Blood Transfusion	Lab	Fully Functional	Normal		Biomedical	1	Other														
 023	Centrifuge	Remi	R303	HMLC-6691	2004-09-01								Chake Chake District Hospital	1	Blood Transfusion	Lab	Fully Functional	Normal		Biomedical	1	Other														
-024	"Refrigerator, Blood"	Frigoriferi	Emotega 250	13608	2004-01-01	UNFPA		2006-01-01				ICAP	Chake Chake District Hospital	1	Blood Transfusion	Lab	Fully Functional	Normal	Installed June 15th 2006	Biomedical	1	Other														
+024	Refrigerator, Blood	Frigoriferi	Emotega 250	13608	2004-01-01	UNFPA		2006-01-01				ICAP	Chake Chake District Hospital	1	Blood Transfusion	Lab	Fully Functional	Normal	Installed June 15th 2006	Biomedical	1	Other														
 025	Chemistry Analyzer	Biochemical System International	screen master 3000 evolution	n33295		ICAP		2006-01-01					Chake Chake District Hospital	1	Hematology	Lab	Fully Functional	Normal	Installed 27 March 2004	Biomedical	1	Other														
-026	Nortex Mixer	"Digisystem Laboratory Instruments, Inc"	vm-1000	08101035		ICAP		2006-01-06					Chake Chake District Hospital	1	Hematology And Chemistry	Lab	Fully Functional	Normal	Installed 6 Jan 2009	Biomedical	1	Other														
-027	"Refridgerator/Freezer, Reagents"	Zec	ZR-440FC	KE3Y570028		ZACP		2007-11-12				ZACP	Chake Chake District Hospital	1	Hematology And Chemistry	Lab	Fully Functional	Normal	Installed 12 Nov 2007	Biomedical	1	Other														
+026	Nortex Mixer	Digisystem Laboratory Instruments, Inc	vm-1000	08101035		ICAP		2006-01-06					Chake Chake District Hospital	1	Hematology And Chemistry	Lab	Fully Functional	Normal	Installed 6 Jan 2009	Biomedical	1	Other														
+027	Refridgerator/Freezer, Reagents	Zec	ZR-440FC	KE3Y570028		ZACP		2007-11-12				ZACP	Chake Chake District Hospital	1	Hematology And Chemistry	Lab	Fully Functional	Normal	Installed 12 Nov 2007	Biomedical	1	Other														
 028	Hematology Analyzer	Harriba Abs	micros 60 ot	6050t80798		ICAP		2006-01-01					Chake Chake District Hospital	1	Hematology And Chemistry	Lab	Not Functional	No Utilization	currently being repaired (fuse box); installed 27 March 2007	Biomedical	1	Other														
-029	Cd4 Machine	"Bd Biosciences San Jose, Ca 9513 Usa"	BD Facs Count TM Instrument	D858000488	2006-01-01	ICAP		2006-01-01					Chake Chake District Hospital	1	Hematology And Chemistry	Lab	Fully Functional	Normal	Date est told 27th of March 2007	Biomedical	1	Other														
+029	Cd4 Machine	Bd Biosciences San Jose, Ca 9513 Usa	BD Facs Count TM Instrument	D858000488	2006-01-01	ICAP		2006-01-01					Chake Chake District Hospital	1	Hematology And Chemistry	Lab	Fully Functional	Normal	Date est told 27th of March 2007	Biomedical	1	Other														
 030	Ecg	Ge Medical Systems	mac500	500008730	2003-01-01	Donated by Ivo de Carreri							Chake Chake District Hospital	1	Radiologist Office	Imaging	Not Functional	No Utilization	unknown electrical issus	Biomedical	1	Other														
 031	Ecg	Medical	cardiofax-3	ai09507		IVO		2009-01-01					Chake Chake District Hospital	1	Radiologist Office	Imaging	Not Functional	No Utilization	Electrical problem	Biomedical	1	Other														
 032	Xray Light Box	Unknown											Chake Chake District Hospital	1	Radiologist Office	Imaging	Fully Functional	No Utilization	not used because xray is broken	Biomedical	1	Other														
@@ -42,10 +42,10 @@
 042	Operation Table	Opt	OPT20	132	1995-01-01	Ivo de Cameri Fdn							Chake Chake District Hospital	1	Minor Theater Room	Theater	Fully Functional	Normal		Biomedical	1	Other														
 043	Examination Lamp	Martin	ML 3005			Ivo de Carneria Fdn							Chake Chake District Hospital	1	Major Theater	Theater	Fully Functional	Normal		Biomedical	1	Other														
 044	Cardiac Monitor	Unknown		7384ld		IDC/IVO							Chake Chake District Hospital	1	Major Theater	Surgical	Not Functional	No Utilization	screen does not light up	Biomedical	1	Other														
-045	Anesthesia Machine	Unknown		280s		IDC/IVO							Chake Chake District Hospital	1	Major Theater	Surgical	Not Functional	No Utilization	"never used, needs halothane vaporizer; gas and air lines do not match tanks and compressor"	Biomedical	1	Other														
+045	Anesthesia Machine	Unknown		280s		IDC/IVO							Chake Chake District Hospital	1	Major Theater	Surgical	Not Functional	No Utilization	never used, needs halothane vaporizer; gas and air lines do not match tanks and compressor	Biomedical	1	Other														
 046	Weighing Scale	Milano Bilonce Salus		c580794		Ivo de Carneria Fdn							Chake Chake District Hospital	1	Major Theater	Theater	Fully Functional	Normal		Biomedical	1	Other														
 047	Air Compressor	Dragerwerk Ag Wbeck	A-L-Kompressor	8406250				2011-01-01					Chake Chake District Hospital	1	Operating Room	Theater	Fully Functional	Normal	not connected to anything	Biomedical	1	Other														
-048	Cardiac Monitor	Datascope	multinex 4000	6117-jo		Ivo de Carreri	Burke & Burke SRL						Chake Chake District Hospital	1	Major Theater	Theater	Not Functional	No Utilization	"unknown problem, never been used"	Biomedical	1	Other														
+048	Cardiac Monitor	Datascope	multinex 4000	6117-jo		Ivo de Carreri	Burke & Burke SRL						Chake Chake District Hospital	1	Major Theater	Theater	Not Functional	No Utilization	unknown problem, never been used	Biomedical	1	Other														
 049	Surgical Lamp	Heraeus	haravlux 2004	9010015									Chake Chake District Hospital	1	Major Theater	Theater	Fully Functional	Very High		Biomedical	1	Other														
 050	Suction Machine	Attrezzature Medica Sanitarie (Ams) Trento	CS M101										Chake Chake District Hospital	1	Major Theater	Theater	Fully Functional	Normal		Biomedical	1	Other														
 051	Anesthesia Machine	Medec	Libretta	12-04112									Chake Chake District Hospital	1	Major Theater	Theater	Fully Functional	Normal		Biomedical	1	Other														
@@ -85,7 +85,7 @@
 085	Dental Xray	Orix Aet	sn82	0-137241									Chake Chake District Hospital	1	Dental Clinic	OPD	Not Functional	No Utilization		Biomedical	1	Other														
 086	Dental Chair	Technodent		0-7062									Chake Chake District Hospital	1	Dental Clinic	OPD	Needs Major Repair	Very High		Biomedical	1	Other														
 087	Dental Unit	Unknown		nref									Chake Chake District Hospital	1	Dental Clinic	OPD	Needs Major Repair	Normal		Biomedical	1	Other														
-088	Exam Light	Elsunk	esb25	40078-903									Chake Chake District Hospital	1	Dental Clinic	OPD	Not Functional	No Utilization	"wrong light for dental clinic. Wrong parts, no bulb, using flashlight instead"	Biomedical	1	Other														
+088	Exam Light	Elsunk	esb25	40078-903									Chake Chake District Hospital	1	Dental Clinic	OPD	Not Functional	No Utilization	wrong light for dental clinic. Wrong parts, no bulb, using flashlight instead	Biomedical	1	Other														
 089	Examination Bed	Unknown											Chake Chake District Hospital	1	Dental Clinic	OPD	Fully Functional	No Utilization	no need for Ward Bed in department; used as a desk for dentist	Biomedical	1	Other														
 090	Examination Chair	Unknown											Chake Chake District Hospital	1	Eye Clinic Examination Room	OPD	Needs Minor Repair	Normal		Biomedical	1	Other														
 091	Autoclave	Titanox		0540/90		Italy							Chake Chake District Hospital	1	Doctor Room	OPD	Fully Functional	Normal		Biomedical	1	Other														
@@ -101,7 +101,7 @@
 101	Microscope	Unknown		y0000199									Chake Chake District Hospital	1	Work Shop Of Vision Center	OPD	Fully Functional	Normal		Biomedical	1	Other														
 102	Pattern Cutter	Supore	ls-100										Chake Chake District Hospital	1	Vision Center Store	OPD	Not Functional	No Utilization		Biomedical	1	Other														
 103	Refrigerator	Electrolux	RCW 50 EK										Chake Chake District Hospital	1	Reproductive Child Health	OPD	Fully Functional	Normal		Biomedical	1	Other														
-104	Examination Bed	Unknown											Chake Chake District Hospital	1	Reproductive Child Health	OPD	Fully Functional	No Utilization	"used as desk, patients not seen in room"	Biomedical	1	Other														
+104	Examination Bed	Unknown											Chake Chake District Hospital	1	Reproductive Child Health	OPD	Fully Functional	No Utilization	used as desk, patients not seen in room	Biomedical	1	Other														
 105	Scale	Seca	2171721009	0123	2009	Doctors without Borders							Chake Chake District Hospital	1	RCH	OPD	Fully Functional	Normal		Biomedical	1	Other														
 106	Bp Machine	Reigter	Bigben Round										Chake Chake District Hospital	1	RCH	OPD	Fully Functional	Normal		Biomedical	1	Other														
 107	Examination Bed	Unknown											Chake Chake District Hospital	1	RCH	OPD	Fully Functional	Normal		Biomedical	1	Other														
