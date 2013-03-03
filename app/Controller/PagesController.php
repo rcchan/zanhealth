@@ -72,7 +72,7 @@ class PagesController extends AppController {
 	public $uses = array();
   
   public function home(){
-    $this->Stats->getStats();
+    $this->Stats->getStats(isset($_POST['statdomain']) ? $_POST['statdomain'] : '');
     $this->set('title_for_layout', 'Dashboard');
   }
 

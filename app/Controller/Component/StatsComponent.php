@@ -30,14 +30,14 @@ class StatsComponent extends Component {
   function startup(&$controller) {
     $this->controller = $controller; // Stores reference Controller in the component
   }
-  public function getStats(){
+  public function getStats($domain = ''){
     $item = ClassRegistry::init('Item');
-    $data = $item->query('SELECT status, COUNT(*) as count FROM items GROUP BY status');
+    $data = $item->query('SELECT status, COUNT(*) as count FROM items WHERE domain = :domain OR :domain = "" GROUP BY status', array(':domain' => $domain));
     $stats = array('status' => array(), 'utilization' => array());
     foreach($data as $d) $stats['status'][] = array($d['items']['status'], intval($d[0]['count']));
-    $data = $item->query('SELECT utilization, COUNT(*) as count FROM items WHERE status not in ("Disposed", "Decommissioned") GROUP BY utilization');
+    $data = $item->query('SELECT utilization, COUNT(*) as count FROM items WHERE status not in ("Disposed", "Decommissioned") and (domain = :domain OR :domain = "") GROUP BY utilization', array(':domain' => $domain));
     foreach($data as $d) $stats['utilization'][] = array($d['items']['utilization'], intval($d[0]['count']));
-    $this->controller->set(array('stats' => $stats)); // Sets data from myQuery in view
+    $this->controller->set(array('stats' => $stats, 'domain' => $domain, 'domains' => $item->find('list', array('fields' => 'domain', 'group' => 'domain'))));
   }
 }
 ?>

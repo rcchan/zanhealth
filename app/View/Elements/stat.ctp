@@ -30,7 +30,14 @@ $this->Html->script('highcharts_exporting', array('inline' => false));
 $this->Html->script('highcharts.theme.grid', array('inline' => false));
 $this->Html->script('stat', array('inline' => false));
 ?>
-
+<form method="POST">
+  <select name="statdomain">
+    <option value="">All</option>
+    <? foreach($domains as $d){ ?>
+      <option value="<?= $d ?>"<?= $d == $domain ? ' selected="selected"' : '' ?>><?= $d ?></option>
+    <? } ?>
+  </select>
+</form>
 <div class="stats">
   <div class="status"></div>
   <div class="utilization"></div>
@@ -39,4 +46,7 @@ $this->Html->script('stat', array('inline' => false));
 <script type="text/javascript">
 zanhealth.pie('Asset Inventory Status', <?= json_encode($stats['status']) ?>, $('.stats .status'));
 zanhealth.pie('Asset Utilization', <?= json_encode($stats['utilization']) ?>, $('.stats .utilization'));
+$('select[name=statdomain]').change(function(e){arguments;
+  $(this).parent().submit();
+});
 </script>
