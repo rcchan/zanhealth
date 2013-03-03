@@ -32,30 +32,77 @@ class WorkRequestsController extends AppController {
   public function index($prop = 'Status', $value = 'Open'){
     $this->set('title_for_layout', 'View Work Requests');
     switch($prop){
-      case 'facility':
-        $this->set('data', $this->WorkRequest->find('all', array(
-          'conditions' => array( 'Item.facility_id' => $value ),
-          'contain' => 'Item.facility_id'
-        )));
-        break;
       case 'requestor':
         $prop .= '_id';
-        //fall through
-      default:
         $this->set('data', $this->WorkRequest->{'findAllBy'.$prop}($value));
+        break;
+      case 'facility':
+      case 'vendor':
+        $prop .= '_id';
+      default:
+        $this->set('data', $this->WorkRequest->find('all', array(
+          'conditions' => array( 'Item.' . $prop => $value ),
+          'contain' => 'Item.' . $prop
+        )));
     }
   }
   
-  public function requestor(){
+  public function reports(){
     $this->set('title_for_layout', 'View Work Requests');
-    if ($this->request->is('post')) $this->redirect(array('..', 'requestor', $_POST['data']['WorkRequest']['requestor']));
+    if ($this->request->is('post')){
+      $prop = strtolower(Inflector::slug(str_replace('Search By ', '', $_POST['submit'])));
+      switch($prop){
+        case 'facility':
+          $this->redirect(array('..', 'facility', $_POST['data']['Facility']['facility']));
+          break;
+        case 'vendor':
+          $this->redirect(array('..', 'vendor', $_POST['data']['Vendor']['vendor']));
+          break;
+        case 'work_request':
+          $this->redirect(array('..', 'requestor', $_POST['data']['WorkRequest']['requestor']));
+          break;
+        case 'asset_name':
+          $this->redirect(array('..', 'name', $_POST['data']['WorkRequest'][$prop]));
+          break;
+        default:
+          $this->redirect(array('..', $prop, $_POST['data']['WorkRequest'][$prop]));
+      }
+    }
+    
+    
     $this->set('requestors', $this->WorkRequest->Requestor->find('list'));
-  }
   
-  public function facility(){
-    $this->set('title_for_layout', 'View Work Requests');
-    if ($this->request->is('post')) $this->redirect(array('..', 'facility', $_POST['data']['Facility']['facility']));
     $this->set('facilities', $this->WorkRequest->Item->Facility->find('list'));
+    
+    $this->set('vendors', $this->WorkRequest->Item->Vendor->find('list'));
+    
+    $asset_name = $this->WorkRequest->Item->find('list', array('fields' => 'name', 'group' => 'name'));
+    foreach($asset_name as $k => $v){
+      if ($v) $asset_name[$v] = $v;
+      unset($asset_name[$k]);
+    }
+    $this->set('asset_name', $asset_name);
+  
+    $manufacturers = $this->WorkRequest->Item->find('list', array('fields' => 'manufacturer', 'group' => 'manufacturer'));
+    foreach($manufacturers as $k => $v){
+      if ($v) $manufacturers[$v] = $v;
+      unset($manufacturers[$k]);
+    }
+    $this->set('manufacturers', $manufacturers);
+    
+    $rooms = $this->WorkRequest->Item->find('list', array('fields' => 'room', 'group' => 'room'));
+    foreach($rooms as $k => $v){
+      if ($v) $rooms[$v] = $v;
+      unset($rooms[$k]);
+    }
+    $this->set('rooms', $rooms);
+    
+    $utilizations = $this->WorkRequest->Item->find('list', array('fields' => 'utilization', 'group' => 'utilization'));
+    foreach($utilizations as $k => $v){
+      if ($v) $utilizations[$v] = $v;
+      unset($utilizations[$k]);
+    }
+    $this->set('utilizations', $utilizations);
   }
   
   public function upsert($id = null){

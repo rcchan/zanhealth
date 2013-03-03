@@ -52,8 +52,7 @@
           <li><a href="/workRequests/create">New Work Request</a></li>
           <li><a href="/workRequests">View Requests</a></li>
           <li><a href="/workRequests/status/closed">Closed Work Requests</a></li>
-          <li><a href="/workRequests/requestor">Reports by Engineer</a></li>
-          <li><a href="/workRequests/facility">Reports by Health Facility</a></li>
+          <li><a href="/workRequests/reports">Reports</a></li>
         </ul>
       </li>
       <li class="dropdown">
