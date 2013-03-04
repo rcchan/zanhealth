@@ -65,7 +65,7 @@
             <b class="caret"></b>
           </a>
           <ul class="dropdown-menu">
-            <li><a href="/users/edit/<?= $user['id'] ?>">Change Password</a></li>
+            <li><a href="/users/changepass">Change Password</a></li>
             <li><a href="/users/logout">Log out</a></li>
           </ul>
         </li>

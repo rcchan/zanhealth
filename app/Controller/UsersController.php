@@ -36,6 +36,7 @@ class UsersController extends AppController {
     switch($this->action){
       case 'login':
       case 'logout':
+      case 'changepass':
         return true;
         break;
       default:
@@ -122,5 +123,14 @@ class UsersController extends AppController {
 
   public function logout() {
       $this->redirect($this->Auth->logout());
+  }
+  
+  public function changepass() {
+    if ($this->request->is('post')){
+      $user = $this->Auth->user();
+      $this->User->read(null, $user['id']);
+      $this->User->set('password', $this->request->data['Change Password']['password']);
+      $this->User->save();
+    }
   }
 }
