@@ -127,10 +127,14 @@ class UsersController extends AppController {
   
   public function changepass() {
     if ($this->request->is('post')){
-      $user = $this->Auth->user();
-      $this->User->read(null, $user['id']);
-      $this->User->set('password', $this->request->data['Change Password']['password']);
-      $this->User->save();
+      if ($this->request->data['Change Password']['password'] != $this->request->data['Change Password']['password_confirm']){
+        $this->Session->setFlash(__('Passwords do not match'));
+      } else {
+        $user = $this->Auth->user();
+        $this->User->read(null, $user['id']);
+        $this->User->set('password', $this->request->data['Change Password']['password']);
+        $this->User->save();
+      }
     }
   }
 }
