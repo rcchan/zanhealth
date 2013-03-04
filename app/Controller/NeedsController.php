@@ -29,6 +29,20 @@
 App::uses('AppController', 'Controller');
 
 class NeedsController extends AppController {
+
+  public function isAuthorized($user) {
+    switch($this->action){
+      case 'upsert':
+        return isset($user['role_id']) && in_array($user['role_id'], array(1,2,3));
+        break;
+      case 'index':
+        return true;
+        break;
+      default:
+        return parent::isAuthorized($user);
+    }
+  }
+
   public function index(){
     $this->set('title_for_layout', 'View Needs List');
     $this->set('data', $this->Need->find('all'));

@@ -44,6 +44,20 @@ class ItemsController extends AppController {
  */
 	public $uses = array();
   
+  public function isAuthorized($user) {
+    switch ($this->action){
+      case 'index':
+      case 'history':
+        return isset($user['role_id']) && in_array($user['role_id'], array(1,2,3,5));
+        break;
+      case 'upsert':
+        return isset($user['role_id']) && in_array($user['role_id'], array(1,2,3));
+        break;
+      default:
+        return parent::isAuthorized($user);
+    }
+  }
+  
   public function index(){
     $this->set('title_for_layout', 'Manage Items');
     $this->set('data', $this->Item->find('all'));

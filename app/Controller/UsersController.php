@@ -31,6 +31,18 @@ App::uses('AppController', 'Controller');
  *
  */
 class UsersController extends AppController {  
+
+  public function isAuthorized($user) {
+    switch($this->action){
+      case 'login':
+      case 'logout':
+        return true;
+        break;
+      default:
+        return isset($user['role_id']) && $user['role_id'] == 1;
+    }
+  }
+
   public function index() {
     $this->User->recursive = 0;
     $this->set('users', $this->paginate());

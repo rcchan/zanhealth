@@ -57,6 +57,10 @@ App::uses('AppController', 'Controller');
  */
 class PagesController extends AppController {
 
+  public function isAuthorized($user) {
+    return $this->action == 'home';
+  }
+
 /**
  * Controller name
  *

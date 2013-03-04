@@ -29,6 +29,19 @@
 App::uses('AppController', 'Controller');
 
 class WorkRequestsController extends AppController {
+  public function isAuthorized($user) {
+    switch($this->action){
+      case 'upsert':
+        return isset($user['role_id']) && in_array($user['role_id'], array(1,3));
+        break;
+      case 'index':
+      case 'reports':
+        return isset($user['role_id']) && in_array($user['role_id'], array(1,2,3,5));
+      default:  
+        return parent::isAuthorized($user);
+    }
+  }
+  
   public function index($prop = 'Status', $value = 'Open'){
     $value = implode('/', array_merge(array($value), array_slice(func_get_args(), 2)));
     $this->set('title_for_layout', 'View Work Requests');

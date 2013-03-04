@@ -61,11 +61,16 @@ class AppController extends Controller {
 	public $components = array('DebugKit.Toolbar', 'Stats', 'Auth' => array(
             'authenticate' => 'BCrypt',
             'loginRedirect' => array('controller' => 'pages', 'action' => 'home', 'home'),
-            'logoutRedirect' => array('controller' => 'users', 'action' => 'login')
+            'logoutRedirect' => array('controller' => 'users', 'action' => 'login'),
+            'authorize' => array('Controller')
         ), 'Session');
 
+  public function isAuthorized($user) {
+    return isset($user['role_id']) && $user['role_id'] == 1;
+  }
+        
   function beforeFilter(){
     $this->Auth->deny(); // deny everything except login
-    $this->set('user', $this->Auth->user());
+    $this->set('user', ($user = $this->Auth->user()));
   }
 }

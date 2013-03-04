@@ -34,16 +34,81 @@ class ConfigController extends AppController {
  *
  * @var string
  */
-	public $name = 'Config';  public $uses = array('Zone', 'District', 'Facility', 'User', 'Vendor', 'Category', 'WorkPriority', 'WorkTrade');
-
+	public $name = 'Config';
+  public $uses = array('Zone', 'District', 'Facility', 'User', 'Vendor', 'Category', 'WorkPriority', 'WorkTrade');
+  
+  public function isAuthorized($user) {
+    return isset($user['role_id']) && $user['role_id'] == 1;
+  }
   public function index($key = NULL){
     $this->set('title_for_layout', $key ? 'Manage ' . Inflector::humanize(Inflector::pluralize($key)) : 'Config System');
-    if ($key){      $model = Inflector::classify($key);      $this->set('key', $key);      $this->set('model', $model);            $typemap = array(        'string' => 'text',        'datetime' => 'date',        'integer' => 'text'      );            $fields = $this->{$model}->getColumnTypes();      foreach($fields as $k => &$v){        $fields[$k] = array('title' => $k, 'type' => $typemap[$v], 'key' => $k == 'id');      }      $this->set('fields', $fields);
-      $this->set('isUserConfig', $model == 'User');    }
-  }    public function find($key = NULL){    $this->autoRender = false;    if($key){      $model = Inflector::classify($key);      $data = $this->{$model}->find('all', array('recursive'=>false));      foreach($data as &$d){        foreach($d as $k => &$f){          if (isset($f['username'])) $f['username'] = '<a href="' . Router::url(array('controller' => 'users', 'action' => 'edit', $f['id'])) . '">' . $f['username'] . '</a>';
-          if (isset($f['password'])) $f['password'] = '[password encrypted]';          if ($k != $model){            $d[$model][strtolower($k) . '_id'] = $d[$k]['name'];            unset($d[$k]);          }        }        $d = $d[$model];      }      echo json_encode(array(        'Result' => 'OK',        'Records' => $data      ));    } else echo json_encode(array('Result' => 'ERROR', 'Message' => 'No key provided'));  }    public function create($key = NULL){    $this->autoRender = false;    if($key){      $model = Inflector::classify($key);      $d = $this->{$model}->save($_POST);
-      if ($d){        foreach($d as $k => &$f){          if ($k != $model){            $d[$model][strtolower($k) . '_id'] = $d[$k]['name'];            unset($d[$k]);          }        }        $d = $d[$model];
-      }            echo json_encode($d ? array(        'Result' => 'OK',        'Record' => $d      ) : array(        'Result' => 'ERROR',        'Message' => 'Could not save data'      ));    } else echo json_encode(array('Result' => 'ERROR', 'Message' => 'No key provided'));  }
+    if ($key){
+      $model = Inflector::classify($key);
+      $this->set('key', $key);
+      $this->set('model', $model);
+      
+      $typemap = array(
+        'string' => 'text',
+        'datetime' => 'date',
+        'integer' => 'text'
+      );
+      
+      $fields = $this->{$model}->getColumnTypes();
+      foreach($fields as $k => &$v){
+        $fields[$k] = array('title' => $k, 'type' => $typemap[$v], 'key' => $k == 'id');
+      }
+      $this->set('fields', $fields);
+      $this->set('isUserConfig', $model == 'User');
+    }
+  }
+  
+  public function find($key = NULL){
+    $this->autoRender = false;
+    if($key){
+      $model = Inflector::classify($key);
+      $data = $this->{$model}->find('all', array('recursive'=>false));
+      foreach($data as &$d){
+        foreach($d as $k => &$f){
+          if (isset($f['username'])) $f['username'] = '<a href="' . Router::url(array('controller' => 'users', 'action' => 'edit', $f['id'])) . '">' . $f['username'] . '</a>';
+          if (isset($f['password'])) $f['password'] = '[password encrypted]';
+          if ($k != $model){
+            $d[$model][strtolower($k) . '_id'] = $d[$k]['name'];
+            unset($d[$k]);
+          }
+        }
+        $d = $d[$model];
+      }
+      echo json_encode(array(
+        'Result' => 'OK',
+        'Records' => $data
+      ));
+    } else echo json_encode(array('Result' => 'ERROR', 'Message' => 'No key provided'));
+  }
+  
+  public function create($key = NULL){
+    $this->autoRender = false;
+    if($key){
+      $model = Inflector::classify($key);
+      $d = $this->{$model}->save($_POST);
+      if ($d){
+        foreach($d as $k => &$f){
+          if ($k != $model){
+            $d[$model][strtolower($k) . '_id'] = $d[$k]['name'];
+            unset($d[$k]);
+          }
+        }
+        $d = $d[$model];
+      }
+      
+      echo json_encode($d ? array(
+        'Result' => 'OK',
+        'Record' => $d
+      ) : array(
+        'Result' => 'ERROR',
+        'Message' => 'Could not save data'
+      ));
+    } else echo json_encode(array('Result' => 'ERROR', 'Message' => 'No key provided'));
+  }
   
   public function update($key = NULL){
     $this->autoRender = false;
@@ -69,5 +134,9 @@ class ConfigController extends AppController {
       
       echo json_encode(array('Result' => 'OK'));
     } else echo json_encode(array('Result' => 'ERROR', 'Message' => 'No key provided'));
-  }    public function apply($key = NULL){    echo 'POST '.$key;  }
+  }
+  
+  public function apply($key = NULL){
+    echo 'POST '.$key;
+  }
 }
