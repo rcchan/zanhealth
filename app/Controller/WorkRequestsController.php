@@ -30,6 +30,7 @@ App::uses('AppController', 'Controller');
 
 class WorkRequestsController extends AppController {
   public function index($prop = 'Status', $value = 'Open'){
+    $value = implode('/', array_merge(array($value), array_slice(func_get_args(), 2)));
     $this->set('title_for_layout', 'View Work Requests');
     switch($prop){
       case 'requestor':
