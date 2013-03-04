@@ -134,6 +134,7 @@ class UsersController extends AppController {
         $this->User->read(null, $user['id']);
         $this->User->set('password', $this->request->data['Change Password']['password']);
         $this->User->save();
+        $this->Session->setFlash(__('Password changed successfully'));
       }
     }
   }
