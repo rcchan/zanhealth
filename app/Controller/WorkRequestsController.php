@@ -48,6 +48,8 @@ class WorkRequestsController extends AppController {
     switch($prop){
       case 'requestor':
         $prop .= '_id';
+        // fall through
+      case 'Status':
         $this->set('data', $this->WorkRequest->{'findAllBy'.$prop}($value));
         break;
       case 'facility':
