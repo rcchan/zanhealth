@@ -43,7 +43,13 @@
       dt.fnFilter( this.value, $('thead.data_filters input, thead.data_filters select').index(this) );
     } );
     
-    dt.popover( {html: true, placement: 'bottom', selector: 'tbody > tr', content: Handlebars.templates.details(<?= json_encode($itemdata) ?>)} );
+    dt.popover( {html: true, placement: 'bottom', selector: 'tbody > tr', content: function(){
+      var id = 'async_' + new Date().getTime();
+      $.getJSON('http://zanhealth.rcchan.com/items/byName', {name: $(this).find('.asset_name').text()}, function(r){
+        $('#' + id).html(Handlebars.templates.details({items: $.map(r, function(e, i){ e.count = i+1; return e; })})).parentsUntil('.popover').parent().css('left', 0);
+      });
+      return '<div class="asset_popover" id="' + id + '">Loading...</div>';
+    }} );
   });
 </script>
 <div style="position: relative">
@@ -79,7 +85,7 @@
     ?>
       <tr>
         <td><?= ++$count ?></td>
-        <td><?= $this->Html->link($d['Need']['name'], array('action' => 'edit', $d['Need']['id'])) ?></td>
+        <td class="asset_name"><?= $this->Html->link($d['Need']['name'], array('action' => 'edit', $d['Need']['id'])) ?></td>
         <td><?= $d['Facility']['name'] ?></td>
         <td><?= $d['Need']['room'] ?></td>
         <td><?= $d['Need']['manufacturer'] ?></td>

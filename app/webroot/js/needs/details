@@ -18,15 +18,15 @@
       {{#each items}}
         <tr>
           <td>{{count}}</td>
-          <td><a href="/item/history/{{id}}" target="history" onclick="window.open(this.href, 'history', 'width=600, height=400'); return false;">{{identifier}}</td>
-          <td>{{name}}</td>
-          <td>{{facility.name}}</td>
-          <td>{{room}}</td>
-          <td>{{manufacturer}}</td>
-          <td>{{model}}</td>
-          <td>{{serial_number}}</td>
-          <td>{{utilization}}</td>
-          <td>{{status}}</td>
+          <td><a href="/item/history/{{Item.id}}" target="history" onclick="window.open(this.href, 'history', 'width=600, height=400'); return false;">{{Item.identifier}}</td>
+          <td>{{Item.name}}</td>
+          <td>{{Facility.name}}</td>
+          <td>{{Item.room}}</td>
+          <td>{{Item.manufacturer}}</td>
+          <td>{{Item.model}}</td>
+          <td>{{Item.serial_number}}</td>
+          <td>{{Item.utilization}}</td>
+          <td>{{Item.status}}</td>
         </tr>
       {{/each}}
     </tbody>

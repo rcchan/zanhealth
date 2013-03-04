@@ -66,6 +66,11 @@ class ItemsController extends AppController {
     $this->set('vendors', $this->Item->Vendor->find('list'));
   }
   
+  public function byName(){
+    $this->autoRender = false;
+    echo json_encode($this->Item->findAllByName($_GET['name']));
+  }
+  
   public function history($id){
     $this->loadModel('WorkRequest');
     $this->set('layout_header', false);
