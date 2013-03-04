@@ -31,6 +31,12 @@
  */
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
   
+  //Router::connect('/config/user', array('controller' => 'users', 'action' => 'index'));
+  //Router::connect('/config/users', array('controller' => 'users', 'action' => 'index'));
+  //Router::connect('/config/User/add', array('controller' => 'users', 'action' => 'add'));
+  //Router::connect('/config/User/update', array('controller' => 'users', 'action' => 'edit'));
+  //Router::connect('/users/edit/:id', array('controller' => 'users', 'action' => 'edit'), array('pass' => array('id')));
+  Router::connect('/users', array('controller' => 'config', 'action' => 'index', 'users'));
   Router::connect('/config/:key/find', array('controller' => 'config', 'action' => 'find', '[method]' => 'POST'), array('pass' => array('key')));
   Router::connect('/config/:key/create', array('controller' => 'config', 'action' => 'create', '[method]' => 'POST'), array('pass' => array('key')));
   Router::connect('/config/:key/update', array('controller' => 'config', 'action' => 'update', '[method]' => 'POST'), array('pass' => array('key')));
@@ -47,8 +53,6 @@
   
   Router::connect('/items/create', array('controller' => 'items', 'action' => 'upsert'));
   Router::connect('/items/edit/:id', array('controller' => 'items', 'action' => 'upsert'), array('pass' => array('id')));
-  
-  Router::connect('/User/create', array('controller' => 'user', 'action' => 'add'));
 
 /**
  * Load all plugin routes.  See the CakePlugin documentation on

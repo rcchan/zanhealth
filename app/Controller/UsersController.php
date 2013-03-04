@@ -74,6 +74,9 @@ class UsersController extends AppController {
           $this->request->data = $this->User->read(null, $id);
           unset($this->request->data['User']['password']);
       }
+      $this->loadModel('Role');
+      $this->set('roles', $this->Role->find('list'));
+      $this->render('add');
   }
 
   public function delete($id = null) {

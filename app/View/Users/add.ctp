@@ -27,8 +27,10 @@
 <div class="users form">
 <?php echo $this->Form->create('User'); ?>
     <fieldset>
-        <legend><?php echo __('Add User'); ?></legend>
-        <?php echo $this->Form->input('username');
+        <legend><?php echo __('Add / Modify User'); ?></legend>
+        <?php
+        echo $this->Form->hidden('id');
+        echo $this->Form->input('username');
         echo $this->Form->input('password');
         echo $this->Form->input('role_id', array(
             'options' => $roles

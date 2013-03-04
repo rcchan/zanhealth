@@ -24,4 +24,10 @@
 * version 3.                                                               *
 \**************************************************************************/
 ?>
-<?$this->Html->script('/jtable/jquery.jtable.min.js', array('inline' => false));$this->Html->css('/jtable/themes/lightcolor/gray/jtable.min.css', NULL, array('inline' => false));?><script type="text/javascript">  $(document).ready(function() {    $('#configlist').jtable({      title: 'Manage <?= $key ?>',      actions: {        listAction: '/config/<?= $model ?>/find',        createAction: '/config/<?= $model ?>/create',        updateAction: '/config/<?= $model ?>/update',        deleteAction: '/config/<?= $model ?>/delete'      },      fields: <?= json_encode($fields) ?>    }).jtable('load');  });</script><div id="configlist"></div><?/*<table>  <thead>    <tr>      <? foreach ($headings as $h => $v){ ?>        <th><?= $h ?></th>      <? } ?>    </tr>  </thead>  <tbody>    <? foreach ($data as $d){ ?>      <tr>        <? foreach($d[$model] as $f){ ?>          <td><?= $f ?> </td>        <? } ?>      </tr>    <? } ?>  </tbody></table><div class="configlist">  <? foreach($data as $d){ ?>    <div><?= $d ?></div>  <? } ?></div>*/?>
+<?$this->Html->script('/jtable/jquery.jtable.min.js', array('inline' => false));$this->Html->css('/jtable/themes/lightcolor/gray/jtable.min.css', NULL, array('inline' => false));?><script type="text/javascript">  $(document).ready(function() {    $('#configlist').jtable({      title: 'Manage <?= $key ?>',      actions: {        listAction: '/config/<?= $model ?>/find',        <? if (!isset($isUserConfig) || !$isUserConfig){ ?>
+        createAction: '/config/<?= $model ?>/create',        updateAction: '/config/<?= $model ?>/update',        <? } ?>
+        deleteAction: '/config/<?= $model ?>/delete'      },      fields: <?= json_encode($fields) ?>    }).jtable('load');  });</script><div id="configlist"></div>
+
+<? if (isset($isUserConfig) && $isUserConfig){ ?>
+  <div style="float: right;"><?= $this->Html->image('new_user.png', array('url' => array('controller' => 'users', 'action' => 'add'))) ?></div>
+<? } ?>
