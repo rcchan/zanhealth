@@ -10,55 +10,10 @@
  * http://www.opensource.org/licenses/mit-license.php
  * http://www.gnu.org/licenses/gpl.html
  */
- 
-(function($){
-    $.widget("suwala.doubleScroll", {
-		options: {
-            contentElement: undefined, // Widest element, if not specified first child element will be used
-			topScrollBarMarkup: '<div class="suwala-doubleScroll-scroll-wrapper"><div class="suwala-doubleScroll-scroll" style="height: 1px;"></div></div>',
-			topScrollBarInnerSelector: '.suwala-doubleScroll-scroll',			
-			scrollCss: {                
-				'overflow-x': 'scroll',
-				'overflow-y':'hidden'
-            },
-			contentCss: {
-				'overflow-x': 'scroll',
-				'overflow-y':'hidden'
-			}
-        },		
-        _create : function() {
-            var self = this;
-			var contentElement;
-
-            // add div that will act as an upper scroll
-			var topScrollBar = $($(self.options.topScrollBarMarkup));
-            self.element.before(topScrollBar);
-
-            // find the content element (should be the widest one)			
-            if (self.options.contentElement !== undefined && self.element.find(self.options.contentElement).length !== 0) {
-                contentElement = self.element.find(self.options.contentElement);
-            }
-            else {
-                contentElement = self.element.find('>:first-child');
-            }
-
-            // bind upper scroll to bottom scroll
-            topScrollBar.scroll(function(){
-                self.element.scrollLeft(topScrollBar.scrollLeft());
-            });
-			
-            // bind bottom scroll to upper scroll
-            self.element.scroll(function(){
-                topScrollBar.scrollLeft(self.element.scrollLeft());
-            });
-
-            // apply css
-            topScrollBar.css(self.options.scrollCss);
-            self.element.css(self.options.contentCss);
-
-            // set the width of the wrappers
-            $(self.options.topScrollBarInnerSelector, topScrollBar).width(contentElement.outerWidth());
-            topScrollBar.width(self.element.width());
-        }
-    });
-})(jQuery);
+(function(l){l.widget("suwala.doubleScroll",{options:{contentElement:void 0,// Widest element, if not specified first child element will be used
+topScrollBarMarkup:'<div class="suwala-doubleScroll-scroll-wrapper"><div class="suwala-doubleScroll-scroll" style="height: 1px;"></div></div>',topScrollBarInnerSelector:".suwala-doubleScroll-scroll",scrollCss:{"overflow-x":"scroll","overflow-y":"hidden"},contentCss:{"overflow-x":"scroll","overflow-y":"hidden"}},_create:function(){var e,o=this,t=l(l(o.options.topScrollBarMarkup));o.element.before(t),// find the content element (should be the widest one)			
+e=void 0!==o.options.contentElement&&0!==o.element.find(o.options.contentElement).length?o.element.find(o.options.contentElement):o.element.find(">:first-child"),// bind upper scroll to bottom scroll
+t.scroll(function(){o.element.scrollLeft(t.scrollLeft())}),// bind bottom scroll to upper scroll
+o.element.scroll(function(){t.scrollLeft(o.element.scrollLeft())}),// apply css
+t.css(o.options.scrollCss),o.element.css(o.options.contentCss),// set the width of the wrappers
+l(o.options.topScrollBarInnerSelector,t).width(e.outerWidth()),t.width(o.element.width())}})})(jQuery);
