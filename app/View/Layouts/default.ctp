@@ -74,10 +74,12 @@
   </head>
   <body>
     <div style="min-height: 100%; position: relative; padding-bottom: 30px;">
-      <div id="flash" class="alert">
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
-        <?php echo $this->Session->flash(); ?>
-      </div>
+      <? if ($m = $this->Session->flash()){ ?>
+        <div id="flash" class="alert">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <?php echo $m; ?>
+        </div>
+      <? } ?>
       <div id="container" class="span10 offset1">
         <? if (!isset($layout_header) || $layout_header !== false){ ?>
           <div class="row">
