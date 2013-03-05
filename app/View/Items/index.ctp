@@ -30,7 +30,7 @@
     var dt = $('#items').dataTable({
       "bJQueryUI": true,
       "sPaginationType": "full_numbers",
-      "bPaginate": false,
+      "bPaginate": false
       //"sScrollX": "100%",
       //"sScrollY": "400px"
     });

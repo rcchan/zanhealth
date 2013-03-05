@@ -60,6 +60,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?
       echo $this->Html->css('default.css');
+      echo $this->Html->script('ie_reduce');
       echo $this->Html->script('//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js');
       echo $this->Html->script('jquery-ui-1.9.2.custom.min.js');
       echo $this->Html->script('bootstrap.min');
