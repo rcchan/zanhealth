@@ -1,6 +1,6 @@
 <script type="text/javascript">
   $(window).load(function(){
-    $('#WorkRequestDate,#WorkRequestExpire').datetimepicker({dateFormat: 'yy-mm-dd', parse: 'loose'});
+    $('#WorkRequestDate,#WorkRequestExpire,#WorkRequestCompleted').datetimepicker({dateFormat: 'yy-mm-dd', parse: 'loose'});
   });
 </script>
 <div class="form well">
@@ -15,6 +15,7 @@
       echo $this->Form->input('type', array('options' => array('Breakdown' => 'Breakdown', 'Preventative' => 'Preventative')));
       echo $this->Form->input('date', array('label' => 'Received Date', 'type' => 'text', 'default' => date('Y-m-d H:i')));
       echo $this->Form->input('expire', array('label' => 'Required Date', 'type' => 'text', 'default' => date('Y-m-d H:i')));
+      echo $this->Form->input('completed', array('label' => 'Date Closed', 'type' => 'text'));
       echo $this->Form->input('status', array('options' => array('Open' => 'Open', 'Closed' => 'Closed')));
       echo $this->Form->input('requestor_id', array('selected' => $user['id']));
       echo $this->Form->input('work_trade_id');

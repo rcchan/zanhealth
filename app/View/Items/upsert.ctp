@@ -45,6 +45,10 @@
     ?>
     </fieldset>
   <?php echo $this->Form->end(__('Submit')); ?>
+  <form method="POST" action="../delete">
+    <input type="hidden" name="id" value="<?= $id ?>">
+    <input type="submit" value="Delete this item" onclick='return confirm("Are you sure you wish to delete this item?")' />
+  </form>
   <h4>Work Request History</h4>
   <?= $this->render('/WorkRequests/index', 'ajax');?>
 </div>

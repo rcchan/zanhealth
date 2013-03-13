@@ -46,12 +46,15 @@
   
   Router::connect('/workRequests/create', array('controller' => 'workRequests', 'action' => 'upsert'));
   Router::connect('/workRequests/edit/:id', array('controller' => 'workRequests', 'action' => 'upsert'), array('pass' => array('id')));
-  Router::connect('/workRequests/:prop/:value/*', array('controller' => 'workRequests', 'action' => 'index'), array('pass' => array('prop', 'value')));
+  Router::connect('/workRequests/export', array('controller' => 'workRequests', 'action' => 'index', 'Status', 'Open', true), array('pass' => array('prop', 'value')));
+  Router::connect('/workRequests/export/:prop/:value/*', array('controller' => 'workRequests', 'action' => 'index', true), array('pass' => array('prop', 'value')));
+  Router::connect('/workRequests/:prop/:value/*', array('controller' => 'workRequests', 'action' => 'index', false), array('pass' => array('prop', 'value')));
   
   Router::connect('/needs/create', array('controller' => 'needs', 'action' => 'upsert'));
   Router::connect('/needs/edit/:id', array('controller' => 'needs', 'action' => 'upsert'), array('pass' => array('id')));
   
   Router::connect('/items/create', array('controller' => 'items', 'action' => 'upsert'));
+  Router::connect('/items/export', array('controller' => 'items', 'action' => 'index', true));
   Router::connect('/items/edit/:id', array('controller' => 'items', 'action' => 'upsert'), array('pass' => array('id')));
 
 /**

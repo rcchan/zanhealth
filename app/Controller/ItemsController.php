@@ -53,17 +53,29 @@ class ItemsController extends AppController {
       case 'upsert':
         return isset($user['role_id']) && in_array($user['role_id'], array(1,2,3));
         break;
+      case 'byName':
+        return true;
+        break;
+      case 'delete':
+        return isset($user['role_id']) && in_array($user['role_id'], array(1));
+        break;
       default:
         return parent::isAuthorized($user);
     }
   }
   
-  public function index(){
+  public function index($export = false){
     $this->set('title_for_layout', 'Manage Items');
     $this->set('data', $this->Item->find('all'));
     $this->set('categories', $this->Item->Category->find('list'));
     $this->set('facilities', $this->Item->Facility->find('list'));
     $this->set('vendors', $this->Item->Vendor->find('list'));
+    if ($export){
+      $this->autoRender = false;
+      $this->layout = 'ajax';
+      header('Content-Disposition: attachment; filename="export.tsv"');
+      $this->render('export');
+    }
   }
   
   public function byName(){
@@ -96,7 +108,17 @@ class ItemsController extends AppController {
     $this->loadModel('WorkRequest');
     $this->set('data', $this->WorkRequest->find('all', array('conditions' => array('item_id' => $id))));
     
-    if ($id) $this->request->data = $this->Item->findById($id);
+    if ($id){
+      $this->request->data = $this->Item->findById($id);
+      $this->set('id', $id);
+    }
+  }
+  
+  public function delete(){
+    if ($this->request->is('post') && $_POST['id']) {
+      $this->Item->delete($_POST['id']);
+      $this->redirect(array('action' => 'index'));
+    }
   }
 }
 ?>
