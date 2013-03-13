@@ -51,7 +51,7 @@
         <ul class="dropdown-menu">
           <li><a href="/workRequests/create">New Work Request</a></li>
           <li><a href="/workRequests">View Requests</a></li>
-          <li><a href="/workRequests/status/closed">Closed Work Requests</a></li>
+          <li><a href="/workRequests/Status/Closed">Closed Work Requests</a></li>
           <li><a href="/workRequests/reports">Reports</a></li>
         </ul>
       </li>
