@@ -49,7 +49,7 @@
       $this->Html->image('new_work_request.png'),
       array('controller' => 'workRequests', 'action' => 'create'),
       array('escape' => false, 'style' => 'position: absolute; top:6px; left: 10px; z-index: 1')
-    )
+    );
   ?>
   <table id="requests">
     <thead>
@@ -60,6 +60,7 @@
         <td>Asset Number</td>
         <td>Received Date</td>
         <td>Required Date</td>
+        <td>Date Closed</td>
         <td>Priority</td>
         <td>Type</td>
         <td>Assigned To</td>
@@ -74,11 +75,12 @@
     ?>
       <tr>
         <td><?= ++$count ?></td>
-        <td><?= $this->Html->link($d['WorkRequest']['id'], array('action' => 'edit', $d['WorkRequest']['id'])) ?></td>
+        <td><?= $this->Html->link($d['WorkRequest']['id'], array('controller' => 'workRequests', 'action' => 'edit', $d['WorkRequest']['id'])) ?></td>
         <td><?= $d['Item']['name'] ?></td>
         <td><?= $d['Item']['identifier'] ?></td>
         <td><?= $d['WorkRequest']['date'] ?></td>
         <td><?= $d['WorkRequest']['expire'] ?></td>
+        <td><?= $d['WorkRequest']['completed'] ?></td>
         <td><?= $d['WorkPriority']['name'] ?></td>
         <td><?= $d['WorkRequest']['type'] ?></td>
         <td><?= $d['WorkRequest']['owner'] ?></td>

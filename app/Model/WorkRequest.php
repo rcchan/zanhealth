@@ -66,8 +66,8 @@ class WorkRequest extends AppModel {
 			'datetime' => array(
 				'rule' => array('datetime'),
 				'message' => 'Invalid date/time',
-				//'allowEmpty' => false,
-				//'required' => false,
+				'allowEmpty' => true,
+				'required' => false,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
