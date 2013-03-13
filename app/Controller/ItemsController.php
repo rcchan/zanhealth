@@ -53,6 +53,9 @@ class ItemsController extends AppController {
       case 'upsert':
         return isset($user['role_id']) && in_array($user['role_id'], array(1,2,3));
         break;
+      case 'byName':
+        return true;
+        break;
       case 'delete':
         return isset($user['role_id']) && in_array($user['role_id'], array(1));
         break;
