@@ -2,6 +2,14 @@
   #content > form { display: inline-block; margin: 30px }
 </style>
 
+<?php echo $this->Form->create('Zone'); ?>
+  <?= $this->Form->input('zone') ?>
+<?php echo $this->Form->end(array('name' => 'submit', 'label' => 'Search By Zone')); ?>
+
+<?php echo $this->Form->create('District'); ?>
+  <?= $this->Form->input('district') ?>
+<?php echo $this->Form->end(array('name' => 'submit', 'label' => 'Search By District')); ?>
+
 <?php echo $this->Form->create('Facility'); ?>
   <?= $this->Form->input('facility') ?>
 <?php echo $this->Form->end(array('name' => 'submit', 'label' => 'Search By Facility')); ?>

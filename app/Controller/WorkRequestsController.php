@@ -52,6 +52,12 @@ class WorkRequestsController extends AppController {
       case 'Status':
         $this->set('data', $this->WorkRequest->{'findAllBy'.$prop}($value));
         break;
+      case 'zone':
+        $this->set('data', $this->WorkRequest->query('SELECT * FROM work_requests as WorkRequest LEFT JOIN work_priorities WorkPriority ON work_priority_id = WorkPriority.id LEFT JOIN work_trades WorkTrade ON work_trade_id = WorkTrade.id LEFT JOIN (SELECT *,CONCAT(domain, \'-\' , tag, \'/HCEU\') as identifier FROM items) Item ON item_id = Item.id LEFT JOIN facility as Facility ON Item.facility_id = Facility.id LEFT JOIN districts as District ON Facility.district_id = District.id LEFT JOIN zones Zone ON District.zone_id = Zone.id WHERE Zone.id = ?', array($value)));
+        break;
+      case 'district':
+        $this->set('data', $this->WorkRequest->query('SELECT * FROM work_requests as WorkRequest LEFT JOIN work_priorities WorkPriority ON work_priority_id = WorkPriority.id LEFT JOIN work_trades WorkTrade ON work_trade_id = WorkTrade.id LEFT JOIN (SELECT *,CONCAT(domain, \'-\' , tag, \'/HCEU\') as identifier FROM items) Item ON item_id = Item.id LEFT JOIN facility as Facility ON Item.facility_id = Facility.id LEFT JOIN districts as District ON Facility.district_id = District.id WHERE District.id = ?', array($value)));
+        break;
       case 'facility':
       case 'vendor':
         $prop .= '_id';
@@ -74,6 +80,12 @@ class WorkRequestsController extends AppController {
     if ($this->request->is('post')){
       $prop = strtolower(Inflector::slug(str_replace('Search By ', '', $_POST['submit'])));
       switch($prop){
+        case 'zone':
+          $this->redirect(array('..', 'zone', $_POST['data']['Zone']['zone']));
+          break;
+        case 'district':
+          $this->redirect(array('..', 'district', $_POST['data']['District']['district']));
+          break;
         case 'facility':
           $this->redirect(array('..', 'facility', $_POST['data']['Facility']['facility']));
           break;
@@ -92,10 +104,10 @@ class WorkRequestsController extends AppController {
     }
     
     
+    $this->set('zones', $this->WorkRequest->Item->Facility->District->Zone->find('list'));
+    $this->set('districts', $this->WorkRequest->Item->Facility->District->find('list'));
     $this->set('requestors', $this->WorkRequest->Requestor->find('list'));
-  
     $this->set('facilities', $this->WorkRequest->Item->Facility->find('list'));
-    
     $this->set('vendors', $this->WorkRequest->Item->Vendor->find('list'));
     
     $asset_name = $this->WorkRequest->Item->find('list', array('fields' => 'name', 'group' => 'name'));
