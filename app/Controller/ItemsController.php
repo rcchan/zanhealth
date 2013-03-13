@@ -53,6 +53,9 @@ class ItemsController extends AppController {
       case 'upsert':
         return isset($user['role_id']) && in_array($user['role_id'], array(1,2,3));
         break;
+      case 'delete':
+        return isset($user['role_id']) && in_array($user['role_id'], array(1));
+        break;
       default:
         return parent::isAuthorized($user);
     }
@@ -102,7 +105,17 @@ class ItemsController extends AppController {
     $this->loadModel('WorkRequest');
     $this->set('data', $this->WorkRequest->find('all', array('conditions' => array('item_id' => $id))));
     
-    if ($id) $this->request->data = $this->Item->findById($id);
+    if ($id){
+      $this->request->data = $this->Item->findById($id);
+      $this->set('id', $id);
+    }
+  }
+  
+  public function delete(){
+    if ($this->request->is('post') && $_POST['id']) {
+      $this->Item->delete($_POST['id']);
+      $this->redirect(array('action' => 'index'));
+    }
   }
 }
 ?>
