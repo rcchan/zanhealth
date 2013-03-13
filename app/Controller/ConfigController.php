@@ -56,6 +56,11 @@ class ConfigController extends AppController {
       $fields = $this->{$model}->getColumnTypes();
       foreach($fields as $k => &$v){
         $fields[$k] = array('title' => $k, 'type' => $typemap[$v], 'key' => $k == 'id');
+        if (substr($k, -3) == '_id'){
+          $fk_model = Inflector::camelize(substr($k, 0, -3));
+          $this->loadModel($fk_model);
+          $fields[$k]['options'] = $this->{$fk_model}->find('list');
+        }
       }
       $this->set('fields', $fields);
       $this->set('isUserConfig', $model == 'User');
@@ -71,10 +76,6 @@ class ConfigController extends AppController {
         foreach($d as $k => &$f){
           if (isset($f['username'])) $f['username'] = '<a href="' . Router::url(array('controller' => 'users', 'action' => 'edit', $f['id'])) . '">' . $f['username'] . '</a>';
           if (isset($f['password'])) $f['password'] = '[password encrypted]';
-          if ($k != $model){
-            $d[$model][strtolower($k) . '_id'] = $d[$k]['name'];
-            unset($d[$k]);
-          }
         }
         $d = $d[$model];
       }
