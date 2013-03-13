@@ -42,8 +42,8 @@ class WorkRequestsController extends AppController {
     }
   }
   
-  public function index($prop = 'Status', $value = 'Open'){
-    $value = implode('/', array_merge(array($value), array_slice(func_get_args(), 2)));
+  public function index($prop = 'Status', $value = 'Open', $export = false){
+    $value = implode('/', array_merge(array($value), array_slice(func_get_args(), 3)));
     $this->set('title_for_layout', 'View Work Requests');
     switch($prop){
       case 'requestor':
@@ -60,6 +60,12 @@ class WorkRequestsController extends AppController {
           'conditions' => array( 'Item.' . $prop => $value ),
           'contain' => 'Item.' . $prop
         )));
+    }
+    if ($export){
+      $this->autoRender = false;
+      $this->layout = 'ajax';
+      header('Content-Disposition: attachment; filename="export.tsv"');
+      $this->render('export');
     }
   }
   

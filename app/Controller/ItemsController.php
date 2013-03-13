@@ -58,12 +58,18 @@ class ItemsController extends AppController {
     }
   }
   
-  public function index(){
+  public function index($export = false){
     $this->set('title_for_layout', 'Manage Items');
     $this->set('data', $this->Item->find('all'));
     $this->set('categories', $this->Item->Category->find('list'));
     $this->set('facilities', $this->Item->Facility->find('list'));
     $this->set('vendors', $this->Item->Vendor->find('list'));
+    if ($export){
+      $this->autoRender = false;
+      $this->layout = 'ajax';
+      header('Content-Disposition: attachment; filename="export.tsv"');
+      $this->render('export');
+    }
   }
   
   public function byName(){
